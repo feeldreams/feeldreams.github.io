@@ -74,5 +74,5 @@ function mketik4() {if(ad<vketik2b.length){kalimatc.innerHTML += vketik2b.charAt
       jawab();
    }
 
-  function stakhir(){tmbl.innerHTML="ðŸ’Œ Kirim";Tombol.style="opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
+  function stakhir(){tmbl.innerHTML="💌 Kirim";Tombol.style="opacity:1;transform: scale(1)";ftom=5;fungsi=0;}
   
