@@ -42,7 +42,6 @@ function mketik4() {if(ad<vketik2b.length){kalimatc.innerHTML += vketik2b.charAt
   kalimat.innerHTML = kalimat2.innerHTML;kalimat.style="margin-left:0;margin-right:0";
   kalimat.style="";kalimata.innerHTML="";
   kalimatb.innerHTML="";kalimatc.innerHTML="";
-  kalimatd.innerHTML="";
   }
 
   function otomatis3() {befanimkata3();setTimeout(animkata3,700);} 
