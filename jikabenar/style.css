@@ -1,0 +1,60 @@
+:root {
+--gaya-font: 'Nunito Sans', sans-serif;
+--gaya-font3: 'Nerko One', cursive;
+}
+@keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
+body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
+body::before{content:"\00A9  Rayys | PalingIT";color:white;opacity:.05;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:2}
+#bodyblur{opacity:.3;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);transition:all 1s ease;} 
+#wallpaper{width:100%;height:100%;transform: scale(2);transition:all 1.7s ease;}
+#beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(0px); backdrop-filter:blur(0px);transition:all 3s ease;}
+
+@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+@keyframes rts{from {transform:scale(.1);} to {transform:scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+@keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
+@keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);/* transform: rotate(-5deg); */} to {transform: scale(1);/* transform: rotate(5deg); */}}
+@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+
+blockquote{position:absolute;opacity:0;visibility:hidden;/*background:var(--warna-bg);border: 1px solid rgba(255, 255, 255, 0.5);border-radius:10px;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;*/transform: scale(.1);transition:all .3s ease;margin-left:0;margin-right:0;color:#fff;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);/*backdrop-filter:blur(2px);*/}
+blockquote{width:400px;text-align:left;line-height:1.3em;padding:0}
+/*blockquote::before{content:attr(data-text);opacity:.7;font-family: sans-serif;position:absolute;left:8px;top:8px;min-width:15px;font-size:16px;text-align:center}*/
+blockquote p{font-size:15px;font-weight:400;line-height:1.5em;transition:all .5s ease;margin-left:40px;margin-right:40px}
+blockquote > .gaya4{margin-top:15px;font-family:var(--gaya-font3);font-size:16px !important;font-weight:400;color:#FF3E34}
+blockquote > .gaya3{font-size:17px;font-weight:700;text-align:center}
+blockquote > .gaya2{font-size:15px;font-weight:400}
+blockquote > #pesan6, blockquote > #pesan7{text-align:center}
+blockquote > #pesanAkhir2, blockquote > #pesanAkhir3{font-family:var(--gaya-font3);font-size:18px !important;}
+blockquote > #pesanAkhir, blockquote > #pesanAkhir2, blockquote > #pesanAkhir3{text-align:center;position: absolute;opacity:0;transform: scale(.1);}
+blockquote p:not(#opsL, #kalimat, #pesan3, #ketlanjut, .gaya2, .gaya4){display:none;}
+blockquote > #opsL{text-align:right;font-size:12px;font-weight:400;line-height:0;margin-top:24px;color:white;opacity:0;}
+
+#Tombol{position:relative;opacity:0;margin:0;display:flex;align-items:left;list-style:none;transform: scale(.1);transition:all 1s ease;}
+#Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border: .7px solid #808080;border-radius:15px;line-height:15px;background:rgba(0,0,0,.2);color:#fff;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;z-index:1}
+#Bn{margin:12px 0 12px 12px !important}
+
+#Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all .7s ease;}
+#Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
+.kumpulan > img{display:none;background: rgba(255, 255, 255, 0.7);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 10%;padding:10px;width:85px;height:85px;margin-top:20px;}
+#ftAwal > img{width:130px;height:130px;margin-bottom:50px;}
+
+#fotolove img{transition:all .5s ease;width:75px;height:75px;padding:0;background:none}
+#loveIn img{display:inline-flex;background:none;width:130px;height:130px;transition:all .3s ease;} 
+#ket, #ketlanjut{text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);font-size:17px;font-weight:700;color:white}
+#ket{margin-top:15px !important;font-size:12px;font-weight:400;opacity:.8}
+#ketlanjut{text-align:right;margin-top:25px;font-size:11px;font-weight:400;opacity:0;transition:all .7s ease;}
+
+@keyframes leaves {0% {transform: scale(1.0);} 100% {transform: scale(.9);}}
+/* #loveIn{animation: leaves .7s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;} */
+.lovein{width:40px;height:40px;background:#fff;border-radius:50%;padding:10px;font-size:30px;display:flex;align-items:center;text-align:center;justify-content:center;transition:all .3s ease;}
+.lovein:hover{transform: scale(.9);}
+
+.swal2-modal > *{font-size:16px;}
+.swal2-title{line-height:1.3em;font-size:17px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{background:#EAEAEA;box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(2px);-webkit-backdrop-filter: blur(2px);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 8px;max-width:330px;top:-60px;}
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel{position: relative;background-color: #4839eb;color: #fff;border-radius:18px;z-index: 1;transition: all 0.2s;}
+
+.fa-heart {opacity:.3;color:white;font-size: 20px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+.sembunyi, #pesanditolak > *, #kado2, #kado3{display:none !important}
