@@ -1,6 +1,6 @@
 @keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
 body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
-body::before{content:"\00A9  Rayys | PalingIT";color:white;opacity:.05;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:2}
+body::before{content:"\00A9  feeldream.id";color:white;opacity:.2;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:2}
 #bodyblur{opacity:.3;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);transition:all 1s ease;} 
 #wallpaper{width:100%;height:100%;transform: scale(2);transition:all 1.7s ease;}
 #beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(0px); backdrop-filter:blur(0px);transition:all 3s ease;}
