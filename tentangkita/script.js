@@ -61,7 +61,7 @@ document.getElementById("bq").onclick = function() {
       }
       kalimat.innerHTML="";
   	new TypeIt("#kalimat", {
-      strings: ["" + pesanAkhir1], startDelay: 10, speed: 40, cursor: true,
+      strings: ["" + pesanAkhir1], startDelay: 10, speed: 37, cursor: true,
       afterComplete: function(){
          kalimat.innerHTML = pesanAkhir1;
          iden += 1;
