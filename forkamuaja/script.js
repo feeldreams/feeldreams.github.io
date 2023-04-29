@@ -1,3 +1,5 @@
+window.location.replace("https://www.feeldream.my.id/2023/01/script-html-bucin.html");
+
 document.getElementById("loveIn").onclick = function() {
     if(fungsiAwal==0){
       audio.play();
