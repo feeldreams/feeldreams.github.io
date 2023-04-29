@@ -1,7 +1,4 @@
-//window.location.replace("https://www.feeldream.my.id/2023/01/script-html-bucin.html");
-
-//async function inipesan(){var { value: nama } = await swals.fire({title: 'Masukkan Nama Kamu', input: 'text',});if(nama && nama.length < 11){window.nama = nama; inihalo.innerHTML = "Hai, " + nama + "! ✨";mulainama();} else {await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();} }
-  async function inipesan(){nama = "kamu";window.nama = nama;mulainama();}  
+async function inipesan(){nama = "kamu";window.nama = nama;mulainama();}  
 
 const box = document.getElementById('pergeseran');
 const directChildren = box.children.length;
