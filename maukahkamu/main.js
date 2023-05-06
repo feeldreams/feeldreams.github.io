@@ -80,7 +80,7 @@ function katakata(){
       },}).go();
 }
 function teksmuncul(){
-	judulakhir.innerHTML=teksjudulakhir;
+	judulakhir.innerHTML=teksjudulakhir2;
 	judulakhir.style="font-family:var(--gaya-font3);font-size:27px";
 	//setTimeout(jjteksnim,300);
 	stikerakhir.style="opacity:0;transform:scale(0)";
