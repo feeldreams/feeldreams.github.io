@@ -25,6 +25,7 @@ h1 {font-size: 2rem;}
 .lingkar{font-weight:400;border-bottom:1px solid #FF0900;}
 h1, h2, h3,h4,h5{margin: 0;text-align: center;margin: 1rem 0;}
 p{color:white;font-size:15px;font-family:var(--gaya-font2);line-height:1.5em;text-align:center}
+p.bold{font-weight:700}
 a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
 #hsatu{transition: all .3s ease}
 #judulakhir{z-index:100;font-size:24px;font-family:var(--gaya-font3);transition:all .5s ease}
