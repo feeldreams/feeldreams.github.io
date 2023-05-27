@@ -174,7 +174,7 @@ function katakata(){
 
 function teksmuncul(){
 
-	judulakhir.innerHTML= teksmuncul;
+	judulakhir.innerHTML= teksmunculakhir;
 
 	judulakhir.style="font-family:var(--gaya-font3);font-size:27px";
 
