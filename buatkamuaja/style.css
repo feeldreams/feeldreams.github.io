@@ -1,0 +1,71 @@
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+:root {
+--gaya-font: 'Quicksand', sans-serif;
+--gaya-font2: 'Nunito Sans', sans-serif;
+--gaya-font3: 'Caveat', cursive;
+}
+body {overflow:hidden;background:#000;font-family:var(--gaya-font); margin: 0;}
+body::before{content:"\00A9  Rayys | feelthisray";color:white;opacity:.5;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
+@keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+
+section {position:relative;z-index:99;padding: 0;height: 100vh;display: flex; flex-direction: column;align-items:left;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border-top:1px solid #fff}
+section {background:#000;background-image: var(--bg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+section.first{border-top:0 solid #fff}
+section.first > img{opacity:0}
+section:nth-child(even) {color:white}
+section:nth-child(odd) {color:white}
+section > :first-child {margin-top:150px}
+
+.stiker{margin-left:auto;margin-right:auto;box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);width:90px;height:90px;background: rgba(255, 255, 255, 0.7);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%;padding:10px;margin-bottom:20px;transition:all .75s ease}
+.stakhir{margin-top:-50px}
+section .wp img{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;background:none;border:none}
+section .wp::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);}
+
+h1 {font-size: 2rem;}
+.lingkar{font-weight:400;border-bottom:1px solid #FF0900;}
+h1, h2, h3,h4,h5{margin: 0;text-align: center;margin: 1rem 0;z-index:99}
+h3.anm{transition:all .7s ease}
+#textsec2b, #textsec3b{opacity:0}
+
+p{color:white;font-size:15px;font-family:var(--gaya-font2);line-height:1.5em;text-align:center}
+p.bold{font-weight:700}
+a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
+#hsatu{transition: all .3s ease}
+#judulakhir{z-index:100;font-size:28px;font-family:var(--gaya-font3);transition:all .5s ease}
+#teksnimasi, #kalimatakhir, #palingakhir{z-index:100;margin-right:auto;margin-left:auto;font-size:14px;font-family:var(--gaya-font2);}
+#teksnimasi{font-size:15px;text-align:center;margin-left:70px;margin-right:70px;}
+.tipeA{font-family:var(--gaya-font);}
+
+svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+.menu{position: fixed;bottom: 15vh;width:100%;z-index: 999;display:flex;justify-content:center;align-items:center;transition: all 1s ease}
+.tombol{background-color: rgba(255,255,255,.25);border-radius: 50px;overflow: hidden;display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombol svg{margin: auto;fill: #fff}
+
+#Tombol, #Tombol2, #TombolWA{position:relative;opacity:0;margin-left:auto;margin-right:auto;display:flex;align-items:left;list-style:none;transition:all 1s ease;}
+#Tombol a, #Tombol2 a, #TombolWA a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:10px;transition:all .2s ease;padding:10px;outline:0;border:1px solid white;border-radius:8px;line-height:15px;background:rgba(0,0,0,.5);color:white;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.15) 0px 7px 29px 0px;z-index:1}
+
+.kolomrange{margin-left:auto;margin-right:auto;width:250px;padding:0;background:none;position:relative;z-index:1;display:none;transition:all 1s ease;align-items:center;}
+.kolomrange .inirange{width:100%;height:40px;margin-right:15px;display:flex;align-items:center;text-align:center;justify-content:center;}
+.kolomrange .inirange input{height:10px;width:100%;-webkit-appearance:none;outline:none;background:#f2f2f2;border-radius:25px;box-shadow:inset 0px 0px 4px rgba(0,0,0,0.2);}
+.kolomrange .inirange input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;border:3px solid #006FFF;background:white;transition:all .2s ease;}
+.kolomrange .inirange input::-webkit-slider-thumb:hover{border:5px solid #006FFF;}
+.kolomrange .inivalue{color:white;font-size:20px}
+
+.overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;background:#000;z-index:100;}
+.loading-message {font-size: 13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;text-align: center;}
+
+.swal2-modal > *{color:white}
+.swal2-title{line-height:1.3em;font-size:18px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;background:rgba(0,0,0,.9);max-width:320px;border-right:2px solid #fff;border-left:2px solid #fff;border-radius:4px;top:-50px;}
+
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+.fa-heart {opacity:.3;color:white;font-size: 20px;position: fixed;animation:  heartMove linear 1;top: -10vh;z-index: 999;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+.sembunyi > *{display:none !important}
