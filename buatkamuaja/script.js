@@ -207,4 +207,4 @@ function mulaiyuk(){
     })
 //})
 }
-setTimeout(mulaiyuk,5000);
+setTimeout(mulaiyuk,3000);
