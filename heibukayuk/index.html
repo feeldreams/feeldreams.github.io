@@ -1,0 +1,97 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <link href="https://feeldreams.github.io/heibukayuk/style.css" rel="stylesheet" type="text/css" />
+
+<head>
+<title>Script HTML</title>
+<!-- 
+  Made with love by Rayys!
+
+     Blog: https://PalingIT.com
+     Instagram: @rayyarrr
+     TikTok: @rayy4r
+     Email: rayyar0703@gmail.com
+
+  Thanks to all <3
+-->
+</head>
+<body>
+	
+   <div id="bodyblur">
+     <!-- Wallpaper / Background --><img src="https://feeldreams.github.io/pics/awan/1.jpg" id="wallpaper"/>
+   </div>
+  
+  <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://i.ibb.co/4VBkZwn/bunga.gif" id="fotoakhir1"/>
+         <img src="https://feeldreams.github.io/mndkat.gif" id="fotoakhir2"/>
+         <img src="https://i.ibb.co/xGc2wBh/cartoons.gif" id="fotoakhir3"/>
+         <img src="https://i.ibb.co/hBJWz6S/tinju.gif" id="fotoakhir4"/>
+  </div>
+
+   <div id='Content'>
+   	
+     <div id="suratin" onClick="memulai();audio.play();">
+       <!-- Surat --><img src="https://rayyscoding.github.io/envelope.png"/>
+     </div>
+     <p id="ket">Klik Suratnya!</p>
+   
+     <div><!-- Foto Akhir --><img src="https://i.ibb.co/z7N6gKp/tos.gif" id="fotoakhir" /></div>
+     <div><blockquote id='bq'>
+       <p id="kalimat"></p>
+       <p id="kalimatc"></p>
+     </blockquote></div>
+   
+     <!-- Tombol Kirim Pesan -->
+     <div id="Tombol">
+       <a onClick="sjawab()">
+         <b>💌 Balas</b>
+       </a>
+     </div>
+     
+   </div>
+
+<script src="https://feeldreams.github.io/heibukayuk/script.js"></script>
+
+<!-- Ganti Kata², Foto, Lagu di bawah ya
+1) Upload foto ke https://postimages.org
+     buat dapetin linknya
+2) Ganti Lagu Upload ke replit.com
+     atau bisa juga ke mailboxdrive.com -->
+
+<script type="text/javascript">
+       async function jawab(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+
+       async function pertama(){
+         audio = new Audio('https://feeldreams.github.io/almostday.mp3');setTimeout(showDiv,100);
+       } pertama();
+       
+       async function pesan(){
+             	await swalst.fire({
+                  title: 'Heyy kamuuu! 😍', 
+                  imageUrl: '' + fotoakhir1.src,
+                  });   	
+                 await swalst.fire({
+                  title: 'Semangat Jalani Harinya yaa 🥳',
+                  imageUrl: '' + fotoakhir2.src,
+                  });
+                 await swalst.fire({
+                  title: 'Tetap Jaga Kesehatan yaa 🫶',
+                  imageUrl: '' + fotoakhir3.src,
+                  });
+                 await swalst.fire({
+                  title: 'Dan Jangan Telat Makan 😍',
+                  imageUrl: '' + fotoakhir4.src,
+                  });
+                  
+                  katangetik = "Oh iyaa, aku cuma mau bilang:<br>Kamu ngga boleh sedih yaa karena<br>aku akan selalu ada di sampingmu 💗<br><br>Dan kamu gausah takut aku<br>bakal pergi dari kamu yaa..";
+                  katangetik2 = "i'm always support you! ✨<br><br><i>i love uuuu 💞🤍💝❣️</i>";
+                  
+                  pesanwhatsapp = "ilvyou too 💞🤍💝❣️";
+                 setTimeout(kpemb,200);
+            }
+</script>
+</body>
+</html>
