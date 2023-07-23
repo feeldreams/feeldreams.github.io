@@ -53,6 +53,11 @@
      
    </div>
 
+<div class='sticky-ad' id='sticky-ad'>
+ <div class='adB'><a rel="dofollow" href='https://bit.ly/htmlfeeldream'>Lihat Script HTML Lainnya di Sini!</a></div>
+<button aria-label='Close this ad' class='sticky-ad-close-button' onclick='hilangkan();'/>
+</div>
+
 <script src="https://feeldreams.github.io/heibukayuk/script.js"></script>
 
 <!-- Ganti Kata², Foto, Lagu di bawah ya
@@ -67,6 +72,12 @@
        async function pertama(){
          audio = new Audio('https://feeldreams.github.io/almostday.mp3');setTimeout(showDiv,100);
        } pertama();
+
+	  function tunjukkan(){document.getElementById("sticky-ad").style = "bottom: 0px";}
+  function hilangkan() {document.getElementById("sticky-ad").style = "bottom: -130px";}
+  
+  tunjukkan();
+	
        
        async function pesan(){
              	await swalst.fire({
