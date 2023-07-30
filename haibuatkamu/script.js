@@ -37,6 +37,9 @@ element.appendChild(watermark);
 aktigeser=0;thisgeser=1;
 //document.getElementById("bodyblur").onclick = function() {multifungsi()}
 
+const hrf = document.getElementById('kot').getElementsByTagName('a')[0];
+hrf.href = 'https://bit.ly/htmlfeeldream';
+
 function multifungsi(){
   if(aktigeser==1){
     document.getElementById('pergeseran').scrollLeft += 300;
