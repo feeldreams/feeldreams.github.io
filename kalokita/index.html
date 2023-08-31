@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="https://feeldreams.github.io/kalokita/style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  
+<head>
+<title>Script HTML buat Kamu</title>
+</head>
+<body>
+	
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/audio/angelbaby.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/pics/bromo.webp" id="wallpaper"/><div id="beneranblur"></div>
+   </div>
+   
+   <div id='Content'>
+
+     <div id="loveIn">
+       <!-- Tombol LOVE -->
+       <label class='lovein'><svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg></label>
+     </div>
+     <p id="ket">Sentuh LOVEnya!</p>
+     <p id="kot"><a href="https://bit.ly/htmlfeeldream" target="_blank">Lihat Script Lainnya</a></p>
+
+     <div class="kumpulanstiker">
+         <!-- Stiker untuk Konten -->
+         <img src="https://feeldreams.github.io/hearthappy.gif" id="fotostiker"/>
+         <img src="https://feeldreams.github.io/bwa2.gif" id="fotostiker2"/>
+         <img src="https://feeldreams.github.io/mikir.gif" id="fotostiker3"/>
+         <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker4"/>
+         <img src="https://feeldreams.github.io/emawh.gif" id="fotostiker5"/>
+         <img src="https://feeldreams.github.io/mmm.gif" id="fotostiker6"/>
+         <img src="https://feeldreams.github.io/ciumin.gif" id="fotostiker7"/>
+         <img src="https://feeldreams.github.io/cilukba.gif" id="fotostiker8"/>
+     </div>
+     
+     <div><blockquote id='bq' data-text='&#9829;'>
+
+       <!-- Konten Isi -->
+       <p id="kalimat"><b class="alt">Hai kamu! 😆✨</b><br><br>Aku mau nanya nih..</p>
+       <p id="kalimat1"><b class="alt">Kamu Lagi Sendiri<br>Ngga Nih? 🤔</b></p>
+       <!-- Pesan Ditolak -->
+       <div class="sembunyi">
+         <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
+         <span id="kataditolak">Sendirian dulu gih 🤣</span>
+       </div>
+       <p id="kalimat2ngetikv2">Ekhemm sama dong,<br>Aku juga sendiri nih 🤭</p>
+       <span id="kalpertanyaan">Nah kita kan udah sama² sendiri,<br>Gimana kalo kita <b class='garismerah'>Jadian</b> aja? 😆❤️</span>
+       <p id="kalimat3ngetik"><b class="alt">Yeaayy!! 🤣❤️<br><br>Makasii udah mau jadi<br>pacar aku, hehe 😆🤭💗</b><br><br>Catat Tanggal Jadian Kita:<br><span id="tgl">💌</span></p>
+       
+       <!-- Tombol Lanjut -->
+       <p id="opsL">Klik untuk Lanjut</p>
+       
+     </blockquote></div>
+     
+     <div id="Tombol">
+       <a id="By" onClick="fungsimau()">Iyaa</a>
+       <a id="Bn" onClick="btn='Bn';fungsibaru(btn)">Engga</a>
+       
+       <span id="penggantiBy" class="sembunyi">💌 Ayo</span>
+       <span id="penggantiBn" class="sembunyi">Gamau</span>
+     </div>
+     
+     <!-- Pesan yang dikirim ke WhatsApp -->
+     <span id="pesanWA" class="sembunyi">Aku mau kok jadi pacar kamu 🤭💗</span>
+     
+   </div>
+
+<!-- Jangan Edit Bagian Ini --><script>const body = document.querySelector("body");const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); audio = new Audio('' + linkmp3.src);const swals = Swal.mixin({allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100,}); const style = document.createElement('style'); var today = new Date();var dd = String(today.getDate()).padStart(2, '0');var mm = String(today.getMonth() + 1).padStart(2, '0');var yyyy = today.getFullYear();const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;tgl.innerHTML += " " + today;function createHeart() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);</script><!-- Sampai Sini --><script src="https://feeldreams.github.io/kalokita/script.js"></script>
+</body>
+</html>
