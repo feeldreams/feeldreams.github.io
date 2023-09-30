@@ -280,6 +280,19 @@ window.addEventListener("load", (event) => {
 
     loadbrn();
   }
+
+async function ptawal(){
+var { isConfirmed: tny } = await swals.fire({
+    title: 'Lanjut Melihat Script Ini<br>atau<br>Script HTML Lainnya?',
+    confirmButtonText: 'Lanjut',
+    cancelButtonText: 'Lainnya',
+    showCancelButton: true,
+});
+if(!tny){
+  window.location.replace("https://web.feeldream.repl.co/");
+}
+  }
+    setTimeout(ptawal,500);
 </script>
 </body>
 </html>
