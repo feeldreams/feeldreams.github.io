@@ -1,0 +1,59 @@
+:root {
+--warna-bg: rgba(0, 0, 0, .5); 
+--warna-teks: #fff;
+--warna-bingkai: #fff;
+--bingkai: 8px;
+--bingkai-kiri: 2px solid var(--warna-bingkai);
+--bingkai-kanan: 2px solid var(--warna-bingkai);
+--gaya-font: 'Work Sans', sans-serif;
+--gaya-font2: 'Ubuntu', sans-serif;
+}
+@keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
+body{background-color:#000;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
+body::before{content:"\00A9  Rayys | feeldream.id";color:white;opacity:.7;font-size:11px;position:fixed;bottom:25px;right:25px;z-index:2}
+#bodyblur{opacity:1;/*animation: jj 7s infinite;*/position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);transition:all 1s ease;} 
+#wallpaper{opacity:.5;width:100%;height:100%;transition:all 1.3s ease;}
+#beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(3px); backdrop-filter:blur(3px);transition:all 3s ease;}
+
+@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
+@keyframes rts{from {transform:scale(.1);} to {transform:scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+@keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
+@keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);/* transform: rotate(-5deg); */} to {transform: scale(1);/* transform: rotate(5deg); */}}
+@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
+
+blockquote{opacity:0;visibility:hidden;background:var(--warna-bg);border-right:var(--bingkai-kanan);border-left:var(--bingkai-kiri);box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;border-radius:0;transform: scale(.1);transition:all 1s ease;position:absolute;margin-top:120px;margin-left:0;margin-right:0;color:var(--warna-teks);text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+blockquote{width:400px;min-height:50px;text-align:center;line-height:1.3em;padding:0 15px 0 15px;}
+/*blockquote::after{content:'❤️';font-family: sans-serif;position:absolute;left:10px;top:10px; font-size:20px; min-width:15px;text-align:center}*/
+
+#Content img{display:none;background:rgba(255,255,255,1);box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;border-radius:8%;padding:10px;height:100px;margin:20px 0 20px 0;}
+#fotoakhir{margin-bottom:15px;transition:all 1.2s ease;transform: scale(.1);}
+
+p{margin-left:10px;margin-right:10px;font-size:17px;font-weight:400;line-height:1.5em;transition:all .8s ease;}
+#kalimat, #isikalimatc, #isikalimatd, #isikalimate{font-size:19px;font-weight:700;}
+#kalimatb, #isikalimatb{margin-left:0;margin-right:0;}
+#kalimatc{font-size:15px;font-weight:400;}
+#kalimatd{}
+#isikalimat{font-size:24px;font-weight:400}
+
+#Tombol{position:relative;opacity:0;margin:0;display:flex;align-items:left;list-style:none;transform: scale(.1);transition:all 1s ease;}
+#Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border-right:var(--bingkai-kanan);border-left:var(--bingkai-kiri);border-radius:4px;line-height:15px;background:var(--warna-bg);color:var(--warna-teks);font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;z-index:1} 
+
+#Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:0;margin-top:50px;width:100%;height:180px;transition:all .7s ease;}
+#Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
+
+#fotolove img{transition:all .5s ease;width:75px;height:75px;padding:0;background:none}
+#suratin img{display:inline-flex;box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;background:rgba(255,255,255, 1);border-radius:10%;padding:10px;width:140px;height:110px;margin:0;transition:all .3s ease;} 
+#ket{text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white}
+#suratin img:hover{transform:scale(.9);}
+
+.swal2-modal > *{color:white}
+.swal2-title{line-height:1.3em;font-size:22px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;background:rgba(0,0,0,.8);border-right:var(--bingkai-kanan);border-left:var(--bingkai-kiri);border-radius:4px;top:-50px;}
+
+.fa-heart {opacity:.3;color:white;font-size: 27px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+#pesanstiker > *, #pesanAwal, #pesanWA, #tgeser, #tklik, #tiya, #linkmp3, #fotoakhir2, #pesanditolak > *, #kalimat1, #kalimatb1, #kalimatc1, #kalimat2, #kalimatb2, #kalimatc2, #kalimat3, #kalimatb3, #kalimatc3, #kalimatc3b{display:none}
+  
