@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+<link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+<link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script><script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script><script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link rel="stylesheet" href=""><script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Untukmu - Script HTML buat Kamu</title>
+<meta name="description" content="@feelthisray - Script by Feeldream Repl Co">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+  
+:root {
+--gaya-font: 'Poppins', sans-serif;
+--gaya-font2: 'Nunito Sans', sans-serif;
+--gaya-font3: 'Caveat', cursive;
+--gaya-font4: 'Quicksand', sans-serif;
+}
+body {overflow:hidden;background:#000;font-family:var(--gaya-font); margin: 0;}
+body::before{content:"\00A9  Rayys | feelthisray";color:white;opacity:.5;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
+@keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+
+section {position:relative;z-index:99;padding: 0;height: 100vh;display: flex; flex-direction: column;align-items:left;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border-top:1px solid #fff}
+section {background:#000;background-image: var(--bg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+section.first{border-top:0 solid #fff}
+section.first > img{opacity:0}
+section:nth-child(even) {color:white}
+section:nth-child(odd) {color:white}
+section > :first-child {margin-top:120px}
+
+.stiker{margin-left:auto;margin-right:auto;box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);width:90px;height:90px;background: rgba(255, 255, 255, 0.7);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%;padding:10px;margin-bottom:20px;transition:all .75s ease}
+.stakhir{margin-top:-50px}
+section .wp img{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;background:none;border:none}
+section .wp::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.55);}
+.first .wp::after {background:rgba(0,0,0,.7)}
+
+h1 {font-size: 1.6rem;font-family:var(--gaya-font4);} h3 {font-size: 1.05rem;}
+.lingkar{font-weight:400;border-bottom:1px solid #FF0900;}
+h1, h2, h3,h4,h5{margin: 0;text-align: center;margin: 1rem 0;z-index:99}
+h3.anm{transition:all .7s ease}
+#textsec2b, #textsec3b{opacity:0}
+b.merah{color:red}
+b.kuning{color:yellow}
+b.putih{text-shadow:none;padding-left:3px;padding-right:3px;background:white;}
+b.garismerah{border-bottom:2px solid red}
+b.gariskuning{border-bottom:2px solid yellow}
+
+p{color:white;font-size:15px;font-family:var(--gaya-font2);line-height:1.5em;text-align:center}
+p.anm{text-align:left;margin:0 60px;margin-left:55px;margin-top:-33px}
+a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
+#hsatu{transition: all .3s ease}
+#judulakhir{z-index:100;font-size:28px;font-family:var(--gaya-font3);transition:all .5s ease}
+#teksnimasi, #kalimatakhir, #palingakhir{z-index:100;margin-right:auto;margin-left:auto;font-size:14px;font-family:var(--gaya-font2);}
+#teksnimasi{font-size:15px;text-align:center;margin-left:70px;margin-right:70px;}
+.tipeA{font-family:var(--gaya-font);}
+section > p span{text-align:center !important}
+
+svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+.menu{position: fixed;bottom: 15vh;width:100%;z-index: 999;display:flex;justify-content:center;align-items:center;transition: all 1s ease}
+.tombol{background-color: rgba(255,255,255,.25);border-radius: 50px;overflow: hidden;display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombol svg{margin: auto;fill: #fff}
+
+#Tombol, #Tombol2, #TombolWA{position:relative;opacity:0;margin-left:auto;margin-right:auto;display:flex;align-items:left;list-style:none;transition:all 1s ease;}
+#Tombol a, #Tombol2 a, #TombolWA a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:10px;transition:all .2s ease;padding:10px;outline:0;border:1px solid white;border-radius:8px;line-height:15px;background:rgba(0,0,0,.5);color:white;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.15) 0px 7px 29px 0px;z-index:1}
+
+.kolomrange{margin-left:auto;margin-right:auto;width:250px;padding:0;background:none;position:relative;z-index:1;display:none;transition:all 1s ease;align-items:center;}
+.kolomrange .inirange{width:100%;height:40px;margin-right:15px;display:flex;align-items:center;text-align:center;justify-content:center;}
+.kolomrange .inirange input{height:10px;width:100%;-webkit-appearance:none;outline:none;background:#f2f2f2;border-radius:25px;box-shadow:inset 0px 0px 4px rgba(0,0,0,0.2);}
+.kolomrange .inirange input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;border:3px solid #006FFF;background:white;transition:all .2s ease;}
+.kolomrange .inirange input::-webkit-slider-thumb:hover{border:5px solid #006FFF;}
+.kolomrange .inivalue{color:white;font-size:20px}
+
+.overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;background:#000;z-index:100;}
+.loading-message {font-size: 13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;text-align: center;}
+
+.swal2-modal > *{color:white}
+.swal2-title{line-height:1.3em;font-size:18px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;background:rgba(0,0,0,.9);max-width:320px;border:.5px solid #fff;border-radius:18px;top:-50px;}
+
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+.fa-heart {opacity:.3;color:white;font-size: 20px;position: fixed;animation:  heartMove linear 1;top: -10vh;z-index: 999;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+.sembunyi > *{display:none !important}
+</style>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+   </div>
+
+   <audio src="17mashup.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+  <section class="first">
+       <div class="wp"><img src="https://i.ibb.co/vh1mySy/2.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
+       <h1 class="title">Aloo kamuuu! 🫶</h1>
+       <p class="flip">Ada hal yang mau aku sampein..</p>
+       <p class="slide-up"><i>Lanjut ke bawah yaa! ✨</i></p>
+  </section>
+  
+  <!--<section>
+      <div class="wp"><img src="https://feeldreams.github.io/buatkamuaja/5.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+      <h3 class="title">Mau Tau Kenapa<br>Aku Milih Kamu? Ã°Å¸Â«Â¶</h3>
+  </section>-->
+  
+  <section>
+      <div class="wp"><img src="https://i.ibb.co/xgyDVLh/1.jpg"/></div>
+      <!--<img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>-->
+      <div id="scroll-container" class="title" style="height: 400px; margin-top:-20px; overflow: auto;">
+      	<p id="textsec2" class="anm" style="margin-top:0">Aku mau bilang terimakasih ke kamu karena udah nerima aku apa adanya 🤍<br><br>Maafin aku ya kalo aku belum bisa jadi yang terbaik buat kamu, tapi aku bakal berusaha untuk menjadi yang terbaik buat kamu..<br><br><b class="garismerah">Tengcyuuu</b> ya sayangkuu, aku gabisa berhenti bilang aku sayanggg kamuu, ya karena aku memang sesayang itu sama kamu, kamu jangan pergi dari hidup aku yaaa? 🫠<br><br>Oh yaa kamu tau engga? aku ga pernah bosen dan ga akan pernah bosen buat bilang <b class="putih merah">i love u</b> ke kamu,<br><br><b class="garismerah">Aku pacar kamu</b>, tetapi bukan cuma pacar yang nemenin kamu waktu kamu bahagia aja, tapi waktu kamu sedih juga..<br><br>Kasih tau aku kalo kamu ada masalah, okeii? jangan takut ngerasa terbebani karena itu engga sama sekali,<br><br><i><b class="merah">i'm here</b>  as your home</i>, aku bakal jadi tempat sandaran waktu kamu sedih. jangan pernah ngerasa sendiri yaa?<br><br><b class="putih merah">aku sayang kamuuu 🥰</b><br><br><span><b class="kuning">Terakhir</b>, <i>i'm so lucky to have u,<br>jangan pernah pergi dari aku,<br><b class="gariskuning">i love u more</b> than anything</i> 🥰💗✨🫶</span></p>
+      </div>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src=""/></div>
+      <img id="stikerdouble" class="stiker stakhir fade-in" src="https://feeldreams.github.io/mndkat.gif"/>
+      <img id="stikerdouble2" class="stakhir" style="display:none" src="https://feeldreams.github.io/bwa2.gif"/>
+      <img id="stikerdouble3" class="stakhir" style="display:none" src="https://feeldreams.github.io/mikir.gif"/>
+      <img id="stikerdouble4" class="stakhir" style="display:none" src="https://feeldreams.github.io/pandaketawa2.gif"/>
+      
+      <h3 id="textsec3" class="anm title">Makasii udah jadi<br>yang terbaik buat aku </h3>
+      <h3 id="textsec3b" class="anm">Oh iyaa, Aku Punya<br>Pantun Buat Kamu </h3>
+      <p id="teksnimasi">Membeli Barang Antik,<br>di Kota Cilacap,<br>Hai Nona <i>Cantik</i>,<br>Give Me Your <b>PAP</b> </p>
+    <div id="Tombol2">
+       <a id="By2" onClick="fungsimau2()">Boleh</a>
+       <a id="Bn2" onClick="btn='Bn2';fungsibaru(btn)">Gaboleh!</a>
+    </div>
+  </section>
+
+  <section id="iniakhir">
+  	<div class="wp"><img src=""/></div>
+      <img id="stikerakhir" class="stiker stakhir fade-in" src="https://feeldreams.github.io/lompatin.gif"/>
+      <img id="stikerakhir2" class="stakhir" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+      <h1 id="judulakhir">Yeayy! </h1>
+      <p id="kalimatakhir">Makasii yaaa </p>
+      <p id="palingakhir">Jangan lupa kirim PAP-nya<br>ke WhatsApp aku! </p>
+      <div id="TombolWA">
+       <a onClick="menuju()">Kirim </a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+  <style>
+  	#iniwa{display:none}
+    svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+    .tomKirim{position: fixed;background-color: #4dc247;bottom: 30px;right: 30px;border-radius: 50px;z-index: 999;overflow: hidden;display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+    .tomKirim svg{margin: auto;fill: #fff} .tomKirim:hover{transform: scale(.8)}
+  </style>
+  <script></script>
+  
+  <a id="iniwa" class='tomKirim' href='https://api.whatsapp.com/send?phone=&text=https%3A%2F%2Fs.id%2Fbukabentarya2'>
+    <svg class='svg-1' viewBox='0 0 32 32'><g><path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'></path><path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'></path></g></svg>
+  </a>
+
+<script>
+pesanwhatsapp = "Boleh nih, mau PAP? ><";
+  
+const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+
+teksjudulakhir = judulakhir.innerHTML; judulakhir.innerHTML="";
+tekskalimatakhir = kalimatakhir.innerHTML; kalimatakhir.innerHTML="";
+tekspalingakhir = palingakhir.innerHTML; palingakhir.innerHTML="";
+
+  initextsec2 = textsec2.innerHTML;textsec2.innerHTML="";
+  function mulaitextseco(){
+  	new TypeIt("#textsec2", {
+      strings: ["" + initextsec2], startDelay: 50, speed: 55, cursor: true,
+      afterComplete: function(){
+      	textsec2.innerHTML = initextsec2;
+          setInterval(berjatuhan,200);
+          clearInterval(scrollInterval);
+          //smn();
+      },}).go();
+   }
+   
+  function mulaitextsec(){setTimeout(katateksnimasi,2500);stikerdouble.style="opacity:0;transform:scale(0)";setTimeout(gantifotodouble,400);textsec3.style="opacity:0";setTimeout(lanjtextsec,400)}
+  function lanjtextsec(){textsec3.style="display:none";textsec3b.style="opacity:1";}
+  function gantifotodouble(){stikerdouble.src=stikerdouble2.src;stikerdouble.style="";}
+  function gantifotodouble2(){textsec3b.style="display:none";stikerdouble.src=stikerdouble3.src;stikerdouble.style="";}
+  function gantifotodouble3(){stikerdouble.src=stikerdouble4.src;stikerdouble.style="";}
+
+initeksnimasi = teksnimasi.innerHTML;teksnimasi.innerHTML="";
+function katateksnimasi(){
+	  stikerdouble.style="opacity:0;transform:scale(0)";setTimeout(gantifotodouble2,400);
+	  textsec3b.style="opacity:0;transform:scale(0)";
+	
+  	new TypeIt("#teksnimasi", {
+      strings: ["" + initeksnimasi], startDelay: 500, speed: 55, cursor: true,
+      afterComplete: function(){
+      	teksnimasi.innerHTML = initeksnimasi;
+          stikerdouble.style="opacity:0;transform:scale(0)";setTimeout(gantifotodouble3,400);
+          //setTimeout(smn,200);
+          setTimeout(muncultombol2,500);
+      },}).go();
+}
+function gantifotodua(){stikerdua.src=stikerdua2.src;stikerdua.style="";}
+
+fungsi=0;fungsiklik=0;skrg=1;iniaja=0;
+function tes(){
+  if(fungsi==0){
+    //playaud();
+    initom.style="opacity:0;bottom:0;";
+    window.scrollBy({top: tinggi,behavior: 'smooth'});
+    fungsi = 1;
+    skrg++;
+    if(skrg==2){skrg++;/*setTimeout(smn,1200);*/}
+    if(skrg==3){fungsi=0;setTimeout(mulaitextseco,600);}
+    if(skrg==4){setTimeout(katateksnimasi,700);}
+    if(skrg==5){}
+    if(skrg>=6){initom.style="opacity:0;bottom:0;";}
+  }
+}
+  function smn(){fungsi=0;initom.style="";}
+  initom.style="opacity:0;bottom:0;transition:none";
+
+  function muncultombol(){fungtom=1;Tombol.style="opacity:1;transform:scale(1)";}
+  function muncultombol2(){Tombol2.style="opacity:1;transform:scale(1)";}
+  
+function aksiakhir() {
+  if(fungsiklik==0){
+    fungsiklik=1;
+    setTimeout(katajudul,100)
+  }
+}
+
+function katajudul(){
+  	new TypeIt("#judulakhir", {
+      strings: ["" + teksjudulakhir], startDelay: 50, speed: 50, cursor: true,
+      afterComplete: function(){
+      	judulakhir.innerHTML = teksjudulakhir;
+          setTimeout(katakata,400);
+      },}).go();
+}
+function katakata(){
+	  new TypeIt("#kalimatakhir", {
+      strings: ["" + tekskalimatakhir], startDelay: 50, speed: 48, cursor: true,
+      afterComplete: function(){
+      	kalimatakhir.innerHTML = tekskalimatakhir;
+          //judulakhir.style="opacity:0;transform:scale(0);";
+          setTimeout(teksmuncul,20);
+          setInterval(berjatuhan,200);
+          setTimeout(kataakhir,700);
+      },}).go();
+}
+function teksmuncul(){
+  //teksjudulakhir2 = "I Love You ÃƒÂ¢Ã…â€œÃ‚Â¨";
+	//judulakhir.innerHTML=teksjudulakhir2;
+	//judulakhir.style="font-family:var(--gaya-font3);font-size:27px";
+	//setTimeout(jjteksnim,300);
+	stikerakhir.style="opacity:0;transform:scale(0)";
+	setTimeout(gantifotoakhir,400);
+}
+function jjteksnim(){judulakhir.style.animation="rto .8s infinite alternate";}
+function gantifotoakhir(){stikerakhir.src=stikerakhir2.src;stikerakhir.style="";}
+function kataakhir(){
+	  new TypeIt("#palingakhir", {
+      strings: ["" + tekspalingakhir], startDelay: 50, speed: 50, cursor: true,
+      afterComplete: function(){
+      	palingakhir.innerHTML = tekspalingakhir;
+          setTimeout(muncultombol3,500);
+      },}).go();
+}
+function muncultombol3(){fungtom2=1;TombolWA.style="opacity:1;transform:scale(1)";}
+function menuju(){if(fungtom2==1){window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}}
+
+tinggi = iniakhir.offsetHeight;
+function tentukantinggi(){tinggi = iniakhir.offsetHeight;}
+setInterval(tentukantinggi,200);
+console.log(tinggi);
+
+fungsiAud=0;function playaud(){if(fungsiAud==0){fungsiAud=1;audio.play();}}
+function keatas(){window.scrollTo(0, 0);}
+
+//window.addEventListener("load", (event) => {
+async function mulaiyuk(){
+	await swals.fire('Klik OK yaa!');
+    audio.play();
+    window.scrollTo(0, 0);
+    setTimeout(keatas,500);
+    
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "none";
+    initom.style="";
+    first_stiker.style="opacity:1;transition:all 2s ease";
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".show-once", { reset: false});
+    ScrollReveal().reveal(".title", {duration: 2500,origin: "top",distance: "50px", easing: "cubic-bezier(0.5, 0, 0, 1)", rotate: { x: 20, z: -10 }});
+    ScrollReveal().reveal(".fade-in", {delay: 200, duration: 2400,move: 0});
+    ScrollReveal().reveal(".scaleUp", {duration: 2500, scale: 0.85});
+    ScrollReveal().reveal(".flip", {delay: 200, duration: 2000, rotate: { x: 20, z: 20}});
+    ScrollReveal().reveal(".slide-right", {duration: 1000,origin: "left",distance: "300px",easing: "ease-in-out"});
+    ScrollReveal().reveal(".slide-up", {duration: 1500, origin: "bottom", distance: "100px", easing: "cubic-bezier(.37,.01,.74,1)", opacity: 0, scale: 0.5});
+    
+    document.addEventListener('scroll', function(e) {
+        let documentHeight = document.body.scrollHeight;
+        let currentScroll = window.scrollY + window.innerHeight;
+        let modifier = 200; 
+        if(currentScroll + modifier > documentHeight) {
+            console.log('Sudah sampai bawah!');
+            initom.style="opacity:0;bottom:0";
+            setTimeout(aksiakhir,10);
+        } else {
+            //initom.style="";
+        }
+    })
+//})
+}
+setTimeout(mulaiyuk,1400);
+
+  const swals = Swal.mixin({allowOutsideClick: false}); 
+  const scrollContainer = document.getElementById("scroll-container");
+  const textContainer = document.getElementById("textsec2");
+
+function autoScroll() {
+  //if (scrollContainer.scrollTop < textContainer.clientHeight - scrollContainer.clientHeight) {
+//    scrollContainer.scrollTop += 1; // Menggeser scroll ke bawah
+ // } else {
+    scrollContainer.scrollTop += 10; // Kembali ke awal ketika mencapai akhir teks
+  //}
+}
+
+const scrollInterval = setInterval(autoScroll, 50); 
+</script>
+</body>
+</html>
