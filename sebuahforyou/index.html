@@ -65,14 +65,15 @@ h3.anm{transition:all .7s ease}
 #textsec2b, #textsec3b{opacity:0}
 b.merah{color:red}
 b.kuning{color:yellow}
-b.putih{padding-left:3px;padding-right:3px;background:white;}
+b.putih{text-shadow:none;padding-left:3px;padding-right:3px;background:white;}
 b.garismerah{border-bottom:2px solid red}
 b.gariskuning{border-bottom:2px solid yellow}
 
 p{color:white;font-size:15px;line-height:1.5em;text-align:center}
-p.anm{text-align:left;margin:0 60px;margin-left:55px;margin-top:-33px}
+p.anm{text-align:left;margin-left:55px;margin-right:60px;}
 .blocktext{max-width: 500px;height: auto;}
 @media  (min-width: 768px){.blocktext{margin-left: 30vw;}}
+/*.blocktext{margin-left:55px;margin-right:60px;padding:30px;background:rgba(0,0,0,.5);border-radius:20px}*/
 a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
 #hsatu{transition: all .3s ease}
 #judulakhir{z-index:100;font-size:28px;font-family:var(--caveat);transition:all .5s ease}
@@ -117,6 +118,16 @@ svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
 .blocklove{display: none;flex-direction: column;justify-content: center;align-items: center;}
 .lovein{background:#fff;color:#FF0900;border-radius:50%;width:40px;height:40px;padding:10px;font-size:30px;display:flex;align-items:center;text-align:center;justify-content:center;transition:all .3s ease;}
 .lovein:hover{transform: scale(.9);color:#FF0900;}
+
+.spin{animation: spin 4s linear infinite alternate;}
+@keyframes spin {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
 </style>
 <body>
 	
@@ -128,56 +139,35 @@ svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
      </div>
    </div>
 
-   <audio src="thousand.mp3" id="linkmp3" class="sembunyi"></audio>
+   <audio src="https://feeldreams.github.io/audio/seandainya.mp3" id="linkmp3" class="sembunyi"></audio>
    
-  <section class="first">
-       <div class="wp"><img src="https://feeldreams.github.io/pics/nightcar.jpg"/></div>
-       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/pandapintu2.gif"/>
-       <h1 class="title itim">Hai Kamu! 😍</h1>
-       <p class="flip">Ada hal yang mau aku sampein..</p>
-       <p class="slide-up"><i>Scroll ke bawah yaa! ✨</i></p>
+  <section class="first" id="inisection">
+       <div class="wp"><img src="https://feeldreams.github.io/pics/night.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+       <h1 class="title itim">Hai Ayaanggg! ✨</h1>
+       <p class="flip">Aku ada pesan buat kamu...</p>
+       <p class="slide-up"><i>Scroll ke bawah yaa! 🫶</i></p>
   </section>
   
-  <section>
+  <!--<section>
       <div class="wp"><img src="https://feeldreams.github.io/buatkamuaja/5.jpg"/></div>
       <img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
       <h3 class="title quicksand">Mau Tau Kenapa<br>Aku Milih Kamu? 🫶</h3>
-  </section>
+  </section>-->
   
   <section>
-      <div class="wp"><img src="https://feeldreams.github.io/buatkamuaja/6.jpg"/></div>
-      <!--<img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>-->
-      <div class="blocktext">
-        <p id="textsec2" class="anm title">Aku memilih kamu karena kamu<br>punya rasa nyaman tersendiri yang<br>ga akan aku temui dimana pun.<br><br><b class="gariskuning">Kamu Tau?</b> Gaada yang bisa bikin<br>aku nyaman selain kamu. Aku milih<br>kamu bukan karena sekedar suka, <br>tetapi juga dengan caramu yang<br>memperlakukanku dengan <b class="garismerah">luar biasa</b>.<br><br>Terimakasih udah hadir di hidup aku.<br>Mungkin pertemuan kita berawal dari<br>ketidaksengajaan, tetapi nyatanya hal<br>inilah yang menjadi hasil kebahagiaan.<br><br>Tetap sama aku terus yaa<b class="merah">!!!</b><br><b class="garismerah">ilvyouuu</b> 🫶🥰💗</p>
+      <div class="wp"><img src="https://feeldreams.github.io/pics/nightcar.jpg"/></div>
+      <div id="scroll-container" class="blocktext txt" style="height: 400px; margin-top:-70px; overflow: auto;">
+        <p id="textsec2" class="anm">mencintai kamu adalah keputusan terbaik menurutku, meski mungkin suatu hari nanti kita udah ga bisa bersama lagi, 
+<br><br>tetapi saat ini adalah perasaan paling indah yang pernah aku miliki, kamu memberiku sesuatu yang belum pernah aku rasakan sebelumnya 🫶
+<br><br>selama ada kamu di sampingku, aku selalu merasa tidur di tempat terbaik dengan suasana hati yang sejuk,
+<br><br><b class="garismerah">kamu tau?</b> ketika aku berada di sisimu, aku selalu ngerasa aman dan nyaman, kamu tau cara nenangin aku, kamu tau cara mendukung aku dan aku sangat bahagia bersamamu ✨
+<br><br>makasih banyak untuk segalanya yang kamu kasih buat aku, semua usahamu, waktu kamu, bahkan pengorbanan besar yang kamu kasih buat aku 🤍
+<br><br>oh yaa, aku cuma pgn bilang kalo kamu adalah versi terbaik dari semua cinta yang pernah ada,
+<br><br>aku beruntung banget punya kamu,<br><i><b class="gariskuning">i'm so happy with u</b></i>, hadirmu membuat hari²ku lebih baik dari sebelumnya! 🫶
+<br><br><i>always <b class="merah">be my home</b> and<br>make me your home yaa</i> 🥰
+<br><br><b class="putih merah">iloveu so much 😍❤️</b></p>
       </div>
-  </section>
-  
-  <section>
-  	<div class="wp"><img src="https://feeldreams.github.io/buatkamuaja/7.jpg"/></div>
-      <img id="stikerdouble" class="stiker stakhir fade-in" src="https://feeldreams.github.io/mndkat.gif"/>
-      <img id="stikerdouble2" class="stakhir" style="display:none" src="https://feeldreams.github.io/bwa2.gif"/>
-      <img id="stikerdouble3" class="stakhir" style="display:none" src="https://feeldreams.github.io/mikir.gif"/>
-      <img id="stikerdouble4" class="stakhir" style="display:none" src="https://feeldreams.github.io/pandaketawa2.gif"/>
-      
-      <h3 id="textsec3" class="anm title">Makasii udah jadi<br>yang terbaik buat aku </h3>
-      <h3 id="textsec3b" class="anm">Oh iyaa, Aku Punya<br>Pantun Buat Kamu </h3>
-      <p id="teksnimasi">Membeli Barang Antik,<br>di Kota Cilacap,<br>Hai Nona <i>Cantik</i>,<br>Give Me Your <b>PAP</b> </p>
-    <!--<div id="Tombol2">
-       <a id="By2" onClick="fungsimau2()">Boleh</a>
-       <a id="Bn2" onClick="btn='Bn2';fungsibaru(btn)">Gaboleh!</a>
-    </div>-->
-  </section>
-
-  <section id="iniakhir">
-  	<div class="wp"><img src="https://feeldreams.github.io/buatkamuaja/6.jpg"/></div>
-      <img id="stikerakhir" class="stiker stakhir fade-in" src="https://feeldreams.github.io/lompatin.gif"/>
-      <img id="stikerakhir2" class="stakhir" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
-      <h1 id="judulakhir">Yeayy! </h1>
-      <p id="kalimatakhir">Makasii yaaa </p>
-      <p id="palingakhir">Jangan lupa kirim PAP-nya<br>ke WhatsApp aku! </p>
-      <div id="TombolWA">
-       <a onClick="menuju()">Kirim </a>
-     </div>
   </section>
   
   <div id="initom" class="menu">
@@ -194,7 +184,7 @@ const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2
 /* Hati Berjatuhan */
 function berjatuhan() {
   const heart = document.createElement("div");
-  heart.innerHTML = "<svg class='line' style='opacity:.5' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg>";
+  heart.innerHTML = "<svg class='line spin' style='opacity:.4' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg>";
   heart.className = "heart-icon";
   heart.style.left = (Math.random() * 95) + "vw";
   heart.style.animationDuration = (Math.random() * 3) + 2 + "s";
@@ -207,19 +197,21 @@ setInterval(function() {
     heartArr[0].remove();
   }
 }, 100);
+//setInterval(berjatuhan, 200);
 /* Akhir Hati Berjatuhan */
 
-teksjudulakhir = judulakhir.innerHTML; judulakhir.innerHTML="";
+/*teksjudulakhir = judulakhir.innerHTML; judulakhir.innerHTML="";
 tekskalimatakhir = kalimatakhir.innerHTML; kalimatakhir.innerHTML="";
 tekspalingakhir = palingakhir.innerHTML; palingakhir.innerHTML="";
-
+*/
   initextsec2 = textsec2.innerHTML;textsec2.innerHTML="";
   function mulaitextseco(){
   	new TypeIt("#textsec2", {
-      strings: ["" + initextsec2], startDelay: 50, speed: 55, cursor: true,
+      strings: ["" + initextsec2], startDelay: 50, speed: 45, /* deff 55 */ cursor: true,
       afterComplete: function(){
       	textsec2.innerHTML = initextsec2;
           setInterval(berjatuhan,200);
+          clearInterval(scrollInterval);
           //smn();
       },}).go();
    }
@@ -230,7 +222,7 @@ tekspalingakhir = palingakhir.innerHTML; palingakhir.innerHTML="";
   function gantifotodouble2(){textsec3b.style="display:none";stikerdouble.src=stikerdouble3.src;stikerdouble.style="";}
   function gantifotodouble3(){stikerdouble.src=stikerdouble4.src;stikerdouble.style="";}
 
-initeksnimasi = teksnimasi.innerHTML;teksnimasi.innerHTML="";
+//initeksnimasi = teksnimasi.innerHTML;teksnimasi.innerHTML="";
 function katateksnimasi(){
 	  stikerdouble.style="opacity:0;transform:scale(0)";setTimeout(gantifotodouble2,400);
 	  textsec3b.style="opacity:0;transform:scale(0)";
@@ -253,8 +245,9 @@ function tes(){
     window.scrollBy({top: tinggi,behavior: 'smooth'});
     fungsi = 1;
     skrg++;
+    skrg++;
     if(skrg==2){setTimeout(smn,1200);}
-    if(skrg==3){fungsi=0;setTimeout(mulaitextseco,800);}
+    if(skrg==3){fungsi=0;setTimeout(mulaitextseco,700);}
     if(skrg==4){setTimeout(katateksnimasi,700);}
     if(skrg==5){}
     if(skrg>=6){initom.style="opacity:0;bottom:0;";}
@@ -313,8 +306,8 @@ function kataakhir(){
 function muncultombol3(){fungtom2=1;TombolWA.style="opacity:1;transform:scale(1)";}
 function menuju(){if(fungtom2==1){window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}}
 
-tinggi = iniakhir.offsetHeight;
-function tentukantinggi(){tinggi = iniakhir.offsetHeight;}
+tinggi = inisection.offsetHeight;
+function tentukantinggi(){tinggi = inisection.offsetHeight;}
 setInterval(tentukantinggi,200);
 console.log(tinggi);
 
@@ -342,7 +335,8 @@ document.getElementById("loveIn").onclick = function() {
     first_stiker.style="opacity:1;transition:all 2s ease";
     ScrollReveal({ reset: true });
     ScrollReveal().reveal(".show-once", { reset: false});
-    ScrollReveal().reveal(".title", {duration: 2500,origin: "top",distance: "50px", easing: "cubic-bezier(0.5, 0, 0, 1)", rotate: { x: 20, z: -10 }});
+    ScrollReveal().reveal(".txt", {duration: 500,origin: "top",distance: "50px", easing: "cubic-bezier(0.5, 0, 0, 1)", rotate: { x: 20, z: -10 }});
+    ScrollReveal().reveal(".title", {delay: 20, duration: 2000,origin: "top",distance: "50px", easing: "cubic-bezier(0.5, 0, 0, 1)", rotate: { x: 20, z: -10 }});
     ScrollReveal().reveal(".fade-in", {delay: 200, duration: 2400,move: 0});
     ScrollReveal().reveal(".scaleUp", {duration: 2500, scale: 0.85});
     ScrollReveal().reveal(".flip", {delay: 200, duration: 2000, rotate: { x: 20, z: 20}});
@@ -356,13 +350,21 @@ document.getElementById("loveIn").onclick = function() {
         if(currentScroll + modifier > documentHeight) {
             console.log('Sudah sampai bawah!');
             initom.style="opacity:0;bottom:0";
-            setTimeout(aksiakhir,10);
+            //setTimeout(aksiakhir,10);
         } else {
             //initom.style="";
         }
     })
 }
 
+  const scrollContainer = document.getElementById("scroll-container");
+  const textContainer = document.getElementById("textsec2");
+
+function autoScroll() {
+    scrollContainer.scrollTop += 10;
+}
+
+const scrollInterval = setInterval(autoScroll, 50); 
 </script>
 </body>
 </html>
