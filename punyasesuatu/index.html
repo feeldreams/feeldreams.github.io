@@ -365,7 +365,7 @@ function gantiFoto1(){
 }
 function gantiTeks1nimasi(){
   	new TypeIt("#teks1", {
-      strings: ["" + vgantiTeks1], startDelay: 10, speed: 30, cursor: true,
+      strings: ["" + vgantiTeks1], startDelay: 10, speed: 35, cursor: true,
       afterComplete: function(){
           teks1.innerHTML = vgantiTeks1;
           showSentuh();
@@ -381,7 +381,7 @@ document.getElementById("loveIn").onclick = function() {
         teks3.style.transform = "scale(1)";
     }, 300);
 
-    setTimeout(gantiTeks1, 300);
+    setTimeout(gantiTeks1, 3000);
 
     ScrollReveal({ reset: true });
     ScrollReveal().reveal(".show-once", { reset: false});
