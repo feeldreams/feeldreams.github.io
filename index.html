@@ -1,96 +1,66 @@
 <!DOCTYPE html>
 <html>
- <script>window.location.replace("https://bit.ly/htmlfeeldream");</script>
-<meta charset='UTF-8'/>
-<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
-<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
 
 <head>
-<title>Script HTML Tidak Ada Warna Biru</title>
-<meta name="description" content="Tapi Ada Warna Abu-Abu">
-<meta name="keywords" content="Tetap Kamu yang Spesial di Hatiku">
-<link rel="icon" type="image/x-icon" href="https://www.palingit.com/favicon.ico">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Feeldream Repl Co</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<style>
-:root {
---warna-bg: rgba(0, 0, 0, .5); 
---warna-teks: #232323;
---warna-bingkai: #fff;
---bingkai: 14px;
---bingkai-kiri: 2px solid var(--warna-bingkai);
---bingkai-kanan: 2px solid var(--warna-bingkai);
---gaya-font: 'Josefin Sans', sans-serif;
-}
-@keyframes fanim {0% {background-position: 0% 0%;}25% {background-position: 100% 100%;} 50% {background-position: 0% 100%;} 75% {background-position: 50% 50%;} 100% {background-position: 0% 0%;}}
-body{background-color:#fffdfc;font-family:var(--gaya-font);padding: 20px 25px;-webkit-user-select: none; -ms-user-select: none; user-select: none;} a{text-decoration:none;}
-body::before{content:"\00A9  Rayys | PalingIT";color:white;opacity:0;font-size:11px;position:fixed;bottom:25px;right:25px;z-index:2}
-#bodyblur{opacity:0;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);z-index:-1;transition:all 1s ease;} 
-#beneranblur{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(0px); backdrop-filter:blur(0px);transition:all 3s ease;}
-#wallpaper{width:100%;height:100%;transform: scale(2);transition:all .8s ease;}
 
-@keyframes jj{0%  {transform: scale(1.1);} 50% {transform: scale(1.2);} 100% {transform: scale(1.1);}}
-@keyframes rts{from {transform:scale(.1);} to {transform:scale(1);}}
-@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
-@keyframes aniopa{0% {transform: scale(1);} 50% {transform: scale(.75);} 100% {transform: scale(1);}}
-@keyframes rtf{from {transform: rotate(0deg);} to {transform: rotate(360deg);}} @keyframes rt{from {transform: scale(.9);/* transform: rotate(-5deg); */} to {transform: scale(1);/* transform: rotate(5deg); */}}
-@keyframes kont{0%  {left:-1px; top:-3px;} 50% {left:1px; top:3px;} 100% {left:-1px; top:-3px;}}
-
-blockquote{position:relative;margin-left:0;margin-right:0;}
-blockquote{width:400px;min-height:50px;border-radius:0;color:var(--warna-teks);text-align:center;line-height:1.3em;padding:20px;}
-blockquote p{margin-left:10px;margin-right:10px;font-size:16px;font-weight:400;line-height:1.4em;transition:all .8s ease;}
-#kalimata, #kalimatb{margin-left:40px;margin-right:40px}
-#kalimatc{font-size:17px;font-weight:400}
-  
-#Content img{display:inline-flex;height:100px;width:100px;margin:20px 0 10px 0;}
-#fotoakhir{margin-bottom:15px;transition:all .8s ease;transform: scale(.1);}
-
-#Tombol{position:relative;margin:0;display:flex;align-items:left;list-style:none;transition:all 1s ease;}
-#Tombol a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:12px 0 12px 0;transition:all .2s ease;padding:10px;outline:0;border:1px solid #000;border-radius:10px;line-height:15px;background:rgba(0,0,0,0);color:var(--warna-teks);font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;z-index:1} 
-
-  /* Button */ .button{position: relative;z-index: 1;transition: all 0.2s;display:inline-flex;align-items:center; margin:10px 0;padding:12px 15px;outline:0;border:0; border-radius:10px;line-height:20px; color:#fffdfc; background:#0b57cf; font-size:14px;white-space:nowrap;overflow:hidden;max-width:320px;margin-left:15px;margin-right:15px} .button.ln{color:inherit;background:transparent; border:1px solid #989b9f} .button.ln:hover{border-color:#0b57cf;box-shadow:0 0 0 1px #0b57cf inset} .btnF{display:flex;justify-content:center; margin:10px 0;width:calc(100% + 12px);left:-6px;right:-6px;position:relative} .btnF >*{margin:0 6px} .button.ln:after, .button.ln:before{background:transparent;} .button:after{content: "";position: absolute;bottom: 0;left: 0;width: 100%;height: 100%;background-color:#0b57cf;z-index: -2;}.button:before{content: "";position: absolute;bottom: 0;left: 0;width: 0%;height: 100%;background-color:#2314c4;transition: all 0.2s;z-index: -1;}.button:hover{opacity:1} .button:hover:before{width: 100%;}
-/* Download btn */ .dlBox{max-width:640px;background:#f1f1f0;border-radius:10px;padding:12px;margin:1.7em 0; display:flex;align-items:center; font-size:18px;line-height:1.4em} .dlBox .fT{flex-shrink:0;display:flex;align-items:center;justify-content:center; width:90px;height:160px; padding:0px; background:rgba(0,0,0,.1);border-radius:5px} .dlBox .fT::before{content:attr(data-text);opacity:.7} .dlBox .fT img{width:90x;height:160px}.dlBox a{flex-shrink:0;margin:0;padding:10px;font-size:13px} .dlBox a::after{content:attr(aria-label)} .dlBox .fN{flex-grow:1; width:calc(100% - 200px);padding:0 15px} .dlBox .fN >*{display:block;} .dlBox .fS{line-height:16px;font-size:14px;margin-top:10px;opacity:.9} 
-/* Icon btn */ .icon{flex-shrink:0;display:inline-flex} .icon::before{content:'';width:18px;height:18px;background-size:18px;background-repeat:no-repeat;background-position:center} .icon::after{content:'';padding:0 6px} .icon.dl::before, .drK .button.ln .icon.dl::before{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'><polyline points='8 17 12 21 16 17'/><line x1='12' y1='12' x2='12' y2='21'/><path d='M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29'/></svg>")} .icon.demo::before{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fefefe' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'><path d='M7.39999 6.32003L15.89 3.49003C19.7 2.22003 21.77 4.30003 20.51 8.11003L17.68 16.6C15.78 22.31 12.66 22.31 10.76 16.6L9.91999 14.08L7.39999 13.24C1.68999 11.34 1.68999 8.23003 7.39999 6.32003Z'/><path d='M10.11 13.6501L13.69 10.0601'/></svg>")} .button.ln .icon.dl::before{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2308102b' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5'><polyline points='8 17 12 21 16 17'/><line x1='12' y1='12' x2='12' y2='21'/><path d='M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29'/></svg>")}
-#Content{animation-name:none;animation-duration: 3s;animation-iteration-count: infinite;position:relative;opacity:1;margin-top:8vh;width:100%;height:180px;transition:all 0s ease;}
-#Content > *{display:flex;align-items:center;text-align:center;justify-content:center;margin-top:1px;}
-
-#suratin img{display:inline-flex;box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;background:rgba(255,255,255, 1);border-radius:10%;padding:10px;width:140px;height:110px;margin:0;transition:all .3s ease;} 
-#ket{margin-top:30px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);font-size:18px;color:white}
-#suratin img:hover{transform:scale(.9);}
-
-.fa-heart {opacity:.3;color:white;font-size: 27px;position: absolute;animation:  heartMove linear 1;top: -10vh;z-index: 0;}
-@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
-
-#linkmp3{display:none}
-</style>
 <body>
+  <div class="flex justify-center relative mt-44">
+  <!-- This is an example component -->
+  <div class="relative grid grid-cols-1 gap-4 p-4 mb-8 border rounded-lg bg-white shadow-lg">
+      <div class="relative flex gap-4">
+          <img src="https://feeldreams.github.io/main-icon.png" class="relative rounded-lg -top-8 -mb-4 bg-white border h-20 w-20" alt="" loading="lazy">
+          <div class="flex flex-col w-full">
+              <div class="flex flex-row justify-between">
+                  <p class="relative text-xl whitespace-nowrap truncate overflow-hidden">feeldream</p>
+              </div>
+              <p class="text-gray-500 text-sm" id="now"></p>
+          </div>
+      </div>
+      <p class="-mt-4 text-gray-600">Lihat Script HTML Ter-update di Feeldream.id!</p>
+    <a class="text-gray-500 text-sm flex flex-row-reverse mt-2" href="https://www.feeldream.id/2023/01/script-feeldream.html?#punyasesuatu"><svg class='fill-none stroke-black stroke-1 w-6 h-6' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) translate(5.000000, 8.500000)'><path d='M14,0 C14,0 9.856,7 7,7 C4.145,7 0,0 0,0'></path></g></svg>
+      <span class="text-black mr-1">Kunjungi</span>
+    </a>
+  </div>
 
-   <div id='Content'>
-   	
-     <div>
-         <img src="https://feeldreams.github.io/smprt.gif" id="fotoAkhir"/>
-     </div>
-     
-     <div><blockquote id='bq'>
 
-       <p>Ups! Mencari <b>Script HTML Bucin</b>?</p>
-       <p>Kamu bisa melihatnya di sini:</p>
-       
-     </blockquote></div>
 
-     <div class="buttonInfo">
+  </div>
+  <script>
+    // Daftar hari dalam bahasa Indonesia
+    const days = [
+      'Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'
+    ];
 
-      <!--<a class="button" href="https://sfile.mobi/kvt6dm3It27" target="_blank"><i class="icon dl"></i>Lihat</a>-->
+    // Daftar bulan dalam bahasa Indonesia
+    const months = [
+      'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
+      'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+    ];
 
-      <a class="button" href="https://bit.ly/htmlfeeldream" target="_blank"><i class="icon demo"></i>Lihat</a>
+    // Mendapatkan elemen dengan ID "now"
+    const nowElement = document.getElementById('now');
 
-     </div>
-     
-   </div>
-  
+    // Mendapatkan tanggal saat ini
+    const currentDate = new Date();
+
+    // Mendapatkan hari, tanggal, bulan, dan tahun
+    const day = days[currentDate.getDay()];
+    const date = currentDate.getDate();
+    const month = months[currentDate.getMonth()];
+    const year = currentDate.getFullYear();
+
+    // Membuat format tanggal yang diinginkan
+    const formattedDate = `${day}, ${date} ${month} ${year}`;
+
+    // Mengisi elemen HTML dengan tanggal yang diformat
+    nowElement.textContent = formattedDate;
+  </script>
+
 </body>
+
 </html>
