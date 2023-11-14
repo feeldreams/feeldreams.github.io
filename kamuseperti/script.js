@@ -112,8 +112,8 @@ function gantiTeks1nimasi(){
       },}).go();
    }
 
-setTimeout(function() {
-//document.getElementById("loveIn").onclick = function() {
+//setTimeout(function() {
+document.getElementById("loveIn").onclick = function() {
     playaud();
     var overlay = document.querySelector(".overlay");
     overlay.style.display = "none";
@@ -147,8 +147,8 @@ setTimeout(function() {
             //initom.style="";
         }
     })
-//}
-}, 500);
+}
+//}, 500);
 
 
   const scrollContainer = document.getElementById("scroll-container");
