@@ -19,7 +19,8 @@
    <div class="overlay">
     <div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
      <div id="loveIn" class="blocklove">
-        <label class="lovein">&#10084;</label>
+        <style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style>
+        <a href="https://www.feeldream.id/2023/01/script-feeldream.html?m=1#punyasesuatu" target="_blank" class="lovein"><svg class='line' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><g transform='translate(2.550170, 3.550158)'><path d='M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z'></path><path d='M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842'></path></g></svg></a>
         <p id="ket">Sentuh LOVEnya!</p>
      </div>
    </div>
@@ -229,7 +230,10 @@ function gantiTeks1nimasi(){
           showSentuh();
       },}).go();
    }
+
+var sudahKlik = false;
 document.getElementById("loveIn").onclick = function() {
+    if (sudahKlik) {
     playaud();
     var overlay = document.querySelector(".overlay");
     overlay.style.display = "none";
@@ -263,6 +267,10 @@ document.getElementById("loveIn").onclick = function() {
             //initom.style="";
         }
     })
+} else {
+    sudahKlik = true; // Tandai bahwa tombol sudah diklik
+    document.getElementById('loveIn').innerHTML = '<style>.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}</style><label class="lovein"><svg class="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g transform="translate(2.550170, 3.550158)"><path d="M0.371729633,8.89614246 C-0.701270367,5.54614246 0.553729633,1.38114246 4.07072963,0.249142462 C5.92072963,-0.347857538 8.20372963,0.150142462 9.50072963,1.93914246 C10.7237296,0.0841424625 13.0727296,-0.343857538 14.9207296,0.249142462 C18.4367296,1.38114246 19.6987296,5.54614246 18.6267296,8.89614246 C16.9567296,14.2061425 11.1297296,16.9721425 9.50072963,16.9721425 C7.87272963,16.9721425 2.09772963,14.2681425 0.371729633,8.89614246 Z"></path><path d="M13.23843,4.013842 C14.44543,4.137842 15.20043,5.094842 15.15543,6.435842"></path></g></svg></label><p id="ket">Sentuh LOVEnya!</p>';
+}
 }
 
   const scrollContainer = document.getElementById("scroll-container");
