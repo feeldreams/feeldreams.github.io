@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Itim&display=swap');
+
+:root {
+--poppins: 'Poppins', sans-serif;
+--nunito: 'Nunito Sans', sans-serif;
+--caveat: 'Caveat', cursive;
+--quicksand: 'Quicksand', sans-serif;
+--itim: 'Itim', cursive;
+--inter: 'Inter', sans-serif;
+}
+
+.poppins{font-family: var(--poppins) !important;}
+.nunito{font-family: var(--nunito) !important;}
+.caveat{font-family: var(--caveat) !important;}
+.quicksand{font-family: var(--quicksand) !important;}
+.itim{font-family: var(--itim) !important;}
+.inter{font-family: var(--inter) !important;}
+
+body {overflow:hidden;background:#000;font-family:var(--poppins); margin: 0;}
+body::before{content:"\00A9  Rayys | feelthisray 2023";color:white;opacity:.7;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
+@keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1);}}
+@keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+
+section {position:relative;padding: 0;height: 100vh;display: flex; flex-direction: column;align-items:left;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border-top:1px solid #fff}
+section {background:#000;background-image: var(--bg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+section.first{border-top:0 solid #fff}
+section.first > img{opacity:0}
+section:nth-child(even) {color:white}
+section:nth-child(odd) {color:white}
+section > :first-child {margin-top:150px}
+
+.stiker{display:flex;justify-content:center;align-items:center;width:90px;height:90px;margin-left:auto;margin-right:auto;box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);background: rgba(255, 255, 255, 0.7);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 50%;padding:10px;margin-bottom:20px;transition:all .75s ease}
+.stiker img{width:80px;height:80px;}
+.stakhir{margin-top:-50px}
+section .wp img{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;background:none;border:none}
+section .wp::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);}
+
+p{font-family:var(--nunito);}
+h1 {font-size: 1.5rem;} h3 {font-size: 1.1rem;}
+h1.med {font-size: 1.4rem}
+.lingkar{font-weight:400;border-bottom:1px solid #FF0900;}
+h1, h2, h3,h4,h5{margin: 0;text-align: center;margin: 1rem 0;z-index:99}
+h3.anm{transition:all .7s ease}
+#textsec2b, #textsec3b{opacity:0}
+b.lg{font-size: 20px}
+b.merah{color:red}
+b.kuning{color:yellow}
+b.putih{text-shadow:none;padding-left:3px;padding-right:3px;background:white;border-radius:5px}
+b.garismerah{border-bottom:2px solid red}
+b.gariskuning{border-bottom:2px solid yellow}
+.transition{transition:all .75s ease}
+.scale0{transform: scale(0);}
+.textspin{animation: jj 1s infinite alternate;}
+
+p{color:white;font-size:16px;line-height:1.5em;text-align:center}
+p.anm{text-align:center;margin-left:55px;margin-right:60px;}
+.scaleIn{transform: scale(0);}
+.text-lg{font-size:19px}
+.text-xl{font-size:20px}
+.text-center{text-align:center}
+.blocktext{position:relative;width:100%;height: 300px; margin-top:0; overflow: auto;}
+/*@media  (min-width: 768px){.blocktext{margin-left: 30vw;}}*/
+/*.blocktext{margin-left:55px;margin-right:60px;padding:30px;background:rgba(0,0,0,.5);border-radius:20px}*/
+a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
+#hsatu{transition: all .3s ease}
+#judulakhir{z-index:100;font-size:28px;font-family:var(--caveat);transition:all .5s ease}
+#teksnimasi, #kalimatakhir, #palingakhir{z-index:100;margin-right:auto;margin-left:auto;font-size:14px;font-family:var(--nunito);}
+#teksnimasi{font-size:15px;text-align:center;margin-left:70px;margin-right:70px;}
+.tipeA{font-family:var(--poppins);}
+
+svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+.menu{/*position: fixed;bottom: 15vh;width:100%;z-index: 999;*/display:flex;flex-direction:column;justify-content:center;align-items:center;transition: all 1s ease}
+.tombol{/*cursor:pointer;*/background-color: rgba(255,255,255,0);border-radius: 50px;overflow: hidden;display: flex;align-items: center;justify-content: center;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombol svg{margin: auto;fill:#ffd4d4;stroke: #ff0000;width: 60px;height: 60px;animation: spin2 1s linear infinite alternate;}
+svg.line{fill: none;stroke: #fff;stroke-width: 2;animation: moving .7s linear infinite alternate;}
+.menu span{z-index:1;font-size:12px;margin-top:12px;color:white;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+.menu{margin-top:25px;transform: scale(0);opacity: 1;}
+
+#Tombol, #Tombol2, #TombolWA{position:relative;opacity:0;margin-left:auto;margin-right:auto;display:flex;align-items:left;list-style:none;transition:all 1s ease;}
+#Tombol a, #Tombol2 a, #TombolWA a{cursor:pointer;display:inline-flex;align-items:center; margin:0;margin:10px;transition:all .2s ease;padding:10px;outline:0;border:1px solid white;border-radius:8px;line-height:15px;background:rgba(0,0,0,.5);color:white;font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;box-shadow: rgba(255,255,255, 0.15) 0px 7px 29px 0px;z-index:1}
+
+.kolomrange{margin-left:auto;margin-right:auto;width:250px;padding:0;background:none;position:relative;z-index:1;display:none;transition:all 1s ease;align-items:center;}
+.kolomrange .inirange{width:100%;height:40px;margin-right:15px;display:flex;align-items:center;text-align:center;justify-content:center;}
+.kolomrange .inirange input{height:10px;width:100%;-webkit-appearance:none;outline:none;background:#f2f2f2;border-radius:25px;box-shadow:inset 0px 0px 4px rgba(0,0,0,0.2);}
+.kolomrange .inirange input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:20px;height:20px;border-radius:50%;border:3px solid #006FFF;background:white;transition:all .2s ease;}
+.kolomrange .inirange input::-webkit-slider-thumb:hover{border:5px solid #006FFF;}
+.kolomrange .inivalue{color:white;font-size:20px}
+
+.overlay {position: fixed;top: 0;left: 0;width: 100%;height: 100%;display: flex;justify-content: center;align-items: center;background:#000;z-index:100;}
+.loading-message {font-size: 13px;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);color:white;text-align: center;}
+
+.swal2-modal > *{color:white}
+.swal2-title{line-height:1.3em;font-size:18px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-container.swal2-backdrop-show{background: rgba(0,0,0,.5);}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{box-shadow: rgba(255,255,255, 0.3) 0px 7px 29px 0px;background:rgba(0,0,0,.9);max-width:320px;border-right:2px solid #fff;border-left:2px solid #fff;border-radius:4px;top:-50px;}
+
+#counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
+.heart-icon {width: 30px;height: 30px;position: fixed;animation:  heartMove linear 1;top: -10vh;}
+
+@keyframes heartMove {
+  0% {transform: translateY(-10vh);}
+  100% {transform: translateY(100vh);}
+}
+
+.sembunyi > *, .sembunyi{display:none !important}
+
+.blocklove{display: none;flex-direction: column;justify-content: center;align-items: center;}
+.lovein{background:#fff;color:#FF0900;border-radius:50%;width:40px;height:40px;padding:10px;font-size:30px;display:flex;align-items:center;text-align:center;justify-content:center;transition:all .3s ease;}
+.lovein:hover{transform: scale(.9);color:#FF0900;}
+.lovein svg{animation:none;stroke:#ff0000;stroke-width:1.3;fill:none;width:35px;height:35px}
+
+.spin{animation: spin 4s linear infinite alternate;}
+@keyframes spin {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes moving {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(3px);
+  }
+}
