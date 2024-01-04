@@ -21,7 +21,7 @@
 .inter{font-family: var(--inter) !important;}
 
 body {overflow:hidden;background:#000;font-family:var(--poppins); margin: 0;}
-body::before{content:"\00A9  Rayys | feelthisray 2023";color:white;opacity:.7;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
+body::before{content:"\00A9  sat_ur_dayy | Babanegga 2023";color:white;opacity:.7;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
 @keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1);}}
 @keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
 #counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
