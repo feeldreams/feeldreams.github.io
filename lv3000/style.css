@@ -1,0 +1,18 @@
+@keyframes fanim {0% {background-size: 100% 100%;}25% {background-size: 102% 102%;} 50% {background-size: 105% 105%;} 75% {background-size: 102% 102%;} 100% {background-size: 100% 100%;}}
+body{background-size: 100% 100% 100%;font-family: 'Quicksand', sans-serif;padding: 25px}body::before{content:"@rayyarr_";color:white;opacity:.2;font-size:5px;position:absolute;bottom:25px;left:calc(50vw - 16px);} a{text-decoration:none;}
+@keyframes leaves {0% {transform: scale(1);} 100% {transform: scale(.90);}} .image .degdeg{animation: leaves 2s ease-in-out infinite alternate;-webkit-animation: leaves 1s ease-in-out infinite alternate;}
+.lovein{margin-left:7px;font-size:1.2rem;display:flex;align-items:center;justify-content:center;transition:all .1s ease;}
+.button:hover, .lovein:hover{transform: scale(.90);}
+#foto{opacity:0;text-align:center;width:100%;height:100px;transition:all 1s ease;}
+#foto > *{display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;color:white}
+#foto img{transition:all .3s ease;}
+#contTom{margin-top:100px;opacity:0;transition:all .5s ease;display:flex;justify-content:center;align-items:center;list-style:none}
+.icon{flex-shrink:0; display:inline-block;margin-right:12px; width:18px;height:18px; background-size:cover;background-repeat:no-repeat;background-position:center}
+.icon.whatsapp{background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23fefefe'><g><path d='M16,2A13,13,0,0,0,8,25.23V29a1,1,0,0,0,.51.87A1,1,0,0,0,9,30a1,1,0,0,0,.51-.14l3.65-2.19A12.64,12.64,0,0,0,16,28,13,13,0,0,0,16,2Zm0,24a11.13,11.13,0,0,1-2.76-.36,1,1,0,0,0-.76.11L10,27.23v-2.5a1,1,0,0,0-.42-.81A11,11,0,1,1,16,26Z'/><path d='M19.86,15.18a1.9,1.9,0,0,0-2.64,0l-.09.09-1.4-1.4.09-.09a1.86,1.86,0,0,0,0-2.64L14.23,9.55a1.9,1.9,0,0,0-2.64,0l-.8.79a3.56,3.56,0,0,0-.5,3.76,10.64,10.64,0,0,0,2.62,4A8.7,8.7,0,0,0,18.56,21a2.92,2.92,0,0,0,2.1-.79l.79-.8a1.86,1.86,0,0,0,0-2.64Zm-.62,3.61c-.57.58-2.78,0-4.92-2.11a8.88,8.88,0,0,1-2.13-3.21c-.26-.79-.25-1.44,0-1.71l.7-.7,1.4,1.4-.7.7a1,1,0,0,0,0,1.41l2.82,2.82a1,1,0,0,0,1.41,0l.7-.7,1.4,1.4Z'/></g></svg>")}
+.button{margin-top:12px;transition:all .2s ease;display:inline-flex;align-items:center;padding:10px 15px;outline:0;border:0; border-radius:10px;line-height:20px; color:#fefefe; background:rgba(0, 0, 0, .50); font-size:13px;white-space:nowrap;overflow:hidden;max-width:100%}
+
+#konten{z-index:3;position:relative;top:-50px;transition:all 1s ease;}
+#slider{opacity:0;transition:all 1s ease;display:flex;flex-wrap:nowrap;align-items:flex-start;justify-content:flex-start;position:relative;width:calc(100%);left:-20px;padding:0 20px; overflow-y:hidden;overflow-x:scroll;scroll-behavior:smooth;scroll-snap-type:x mandatory; -ms-overflow-style:none;-webkit-overflow-scrolling:touch}
+#slider > *{display:flex;flex-wrap:nowrap;text-align:center;font-size:13px;font-weight:700;align-items:center;justify-content:center;border-radius:10px;flex-shrink:0; width:90%; height:30vh;background:rgba(0, 0, 0, .40);color:white;margin:0 15px 0 0; scroll-snap-align:center} #slider > *:last-child{margin-right:0} #slider:after{content:'';display:block;flex-shrink:0; align-self:stretch;padding-left:20px}
+#bodyblur{display:block;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:1;transition:all 1s ease;opacity:0;visibility:hidden;-webkit-backdrop-filter:blur(5px); backdrop-filter:blur(5px);}
+            
