@@ -30,9 +30,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
-    <link href="shttps://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        crossorigin="anonymous">
+    <link href="shttps://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
     <link rel="stylesheet" href="public/kiddynew/home/css/one.css?v=2">
     <title>FaucetEarner - Best Crypto Advertising and Earning Platform</title>
 </head>
@@ -53,7 +53,8 @@
     }
 
     html {
-        font-size: 62.5%
+        font-size: 62.5%;
+        scroll-behavior: smooth;
     }
 
     body {
@@ -61,7 +62,7 @@
         color: var(--white);
         overflow: hidden auto;
         background: #030828;
-        font-family: 'exo 2', sans-serif
+        font-family: 'exo 2', sans-serif;
     }
 
     a,
@@ -312,7 +313,7 @@
 
     #hero .hero-sub {
         font-weight: 300;
-        font-size: calc(1.6rem + 0.6vw)
+        font-size: calc(1.3rem + 0.6vw)
     }
 
     .section-title {
@@ -384,6 +385,8 @@
     }
 
     #faq,
+    #skills,
+    #projects,
     #earn,
     #stats,
     #feature,
@@ -646,16 +649,25 @@
         <nav id="navbar">
             <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
                 <div class="row">
-                    <div class="nav-wrap">
+                    <div class="nav-wrap mx-6">
 
                         <div class="ml-4">
-                            <a class="site-name" href>
-                                <div class="hidden logo">
-                                    <img src="public/kiddynew/home/img/logop.png" alt>
-                                </div>
-                                Rayya R.
-                            </a>
+                            <a id="anim" class="site-name" href></a>
                         </div>
+                        <script>
+    new TypeIt('#anim', {
+        strings: ["<b class='text-orange-600'>Ray</b>ya R.", "<b class='text-orange-600'>a.k.a.</b>&nbsp;Rayys"],
+        speed: 50,
+        delay: 500,
+        breakLines: false,
+        cursor: true,
+        lifeLike: true,
+        waitUntilVisible: true,
+        afterComplete: function () {
+              anim.innerHTML = "<b class='text-orange-600'>Ray</b>ys";  
+        }
+    }).pause(700).go();
+</script>
 
                         <div class="nav-toggler">
                             <i class="bx bx-menu-alt-right"></i>
@@ -682,34 +694,34 @@
     <section id="hero">
         <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
             <div class="flex flex-row flex-wrap justify-center">
-                <div class="col-12 text-center">
+                <div class="mx-8 col-12 text-center">
 
                     <div class="relative my-4">
                         <div class="absolute -inset-2">
                             <div
-                                class="w-28 h-full max-w-sm mx-auto opacity-70 blur-lg bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
+                                class="w-32 h-full max-w-sm mx-auto opacity-70 blur-lg bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600">
                             </div>
                         </div>
                         <img src="https://i.ibb.co/9YDwtmX/IMG-20240123-222807.jpg"
-                            class="mx-auto relative object-cover shrink-0 h-28 w-28 z-10 rounded-2xl">
+                            class="mx-auto relative object-cover shrink-0 h-32 w-32 z-10 rounded-2xl">
                     </div>
 
-                    <h2 class="hero-heading mb-3">
-                        Rayya R.
+                    <h2 class="hero-heading my-3">
+                        <span>Rayya R,</span>
                         <br>
-                        <span> Crypto For Free</span>
+                        a.k.a.&nbsp;<span>Rayys</span>
                     </h2>
-                    <div class="hero-method mb-5 justify-content-center ">
-                        <p class="hero-sub">Payment Method</p>
-                        <ul>
+                    <div class="hero-method mt-8 mb-5 justify-center mx-5 md:mx-auto">
+                        <p class="hero-sub">Immersed in the art of software development, I am an enthusiastic <mark>Fullstack Developer</mark>, fueled by a passion to create innovative, user-centric applications.</p>
+                        <!--<ul>
                             <li><img src="public/kiddynew/home/img/bitcoin.svg" alt></li>
                             <li><img src="public/kiddynew/home/img/usdt.svg" alt></li>
                             <li><img src="public/kiddynew/home/img/xrp.png" alt></li>
                             <li><img src="public/kiddynew/home/img/trx.png" alt></li>
-                        </ul>
+                        </ul>-->
                     </div>
-                    <div class="flex hero-btn justify-center">
-                        <a href="#earn" class="btn-one me-4 pulsebtn">
+                    <div class="flex hero-btn justify-center mt-16">
+                        <a href="#skills" class="btn-one me-4 pulsebtn">
                             See More
                         </a>
                         <!--<a href="login.php" class="btn-one black">
@@ -720,41 +732,29 @@
             </div>
         </div>
     </section>
-    <style>
-        .swiper {
-            /*width: 100%;*/
-            height: 100%;
-        }
-    </style>
-    <section>
+    
+    <section id="skills">
         <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="mx-8 col-12 text-center">
                     <h2 class="section-title" data-aos="zoom-in">Skills</h2>
                     <p class="section-sub" data-aos="fade-up">We have three earning options for you to choose from:
                         unlimited faucet, PTC advertisements, and smart investment!</p>
                 </div>
             </div>
             <div class="row">
-                <!-- component -->
-                <!-- This is an example component -->
                 <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 
-                <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                <div class="flex flex-wrap">
                     <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
-                        <div class="mx-6 pattern-dots-md gray-light">
+                        <div class="ml-3 mr-8 md:ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
                             <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6  ">
                                 <div
-                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-green-100 text-green-500 mb-5 flex-shrink-0 p-2">
-                                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01">
-                                        </path>
-                                    </svg>
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-white text-white mb-5 flex-shrink-0 p-2">
+                                    <svg class="w-16 h-16" viewBox="0 0 711.20123 383.5975"width=711.20123 xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:cc=http://creativecommons.org/ns# xmlns:dc=http://purl.org/dc/elements/1.1/ xmlns:rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns# xmlns:svg=http://www.w3.org/2000/svg><title id=title3510>Official PHP Logo</title><metadata id=metadata3436><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource=http://purl.org/dc/dcmitype/StillImage /><dc:title>Official PHP Logo</dc:title><dc:creator><cc:Agent><dc:title>Colin Viebrock</dc:title></cc:Agent></dc:creator><dc:description/><dc:contributor><cc:Agent><dc:title/></cc:Agent></dc:contributor><cc:license rdf:resource=http://creativecommons.org/licenses/by-sa/3.0/ /><dc:rights><cc:Agent><dc:title>Copyright Colin Viebrock 1997 - All rights reserved.</dc:title></cc:Agent></dc:rights><dc:date>1997</dc:date></cc:Work><cc:License rdf:about=http://creativecommons.org/licenses/by-sa/3.0/ ><cc:permits rdf:resource=http://creativecommons.org/ns#Reproduction /><cc:permits rdf:resource=http://creativecommons.org/ns#Distribution /><cc:requires rdf:resource=http://creativecommons.org/ns#Notice /><cc:requires rdf:resource=http://creativecommons.org/ns#Attribution /><cc:permits rdf:resource=http://creativecommons.org/ns#DerivativeWorks /><cc:requires rdf:resource=http://creativecommons.org/ns#ShareAlike /></cc:License></rdf:RDF></metadata><defs id=defs3434><clipPath clipPathUnits=userSpaceOnUse id=clipPath3444><path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162"id=path3446 /></clipPath><radialGradient cx=0 cy=0 fx=0 fy=0 gradientTransform=matrix(363.05789,0,0,-363.05789,177.52002,256.30713) gradientUnits=userSpaceOnUse id=radialGradient3452 r=1 spreadMethod=pad><stop id=stop3454 offset=0 style=stop-opacity:1;stop-color:#aeb2d5 /><stop id=stop3456 offset=0.3 style=stop-opacity:1;stop-color:#aeb2d5 /><stop id=stop3458 offset=0.75 style=stop-opacity:1;stop-color:#484c89 /><stop id=stop3460 offset=1 style=stop-opacity:1;stop-color:#484c89 /></radialGradient><clipPath clipPathUnits=userSpaceOnUse id=clipPath3468><path d="M 0,324 576,324 576,0 0,0 0,324 Z"id=path3470 /></clipPath><clipPath clipPathUnits=userSpaceOnUse id=clipPath3480><path d="M 0,324 576,324 576,0 0,0 0,324 Z"id=path3482 /></clipPath></defs><g id=g3438 transform=matrix(1.25,0,0,-1.25,-4.4,394.29875)><g id=g3440><g id=g3442 clip-path=url(#clipPath3444)><g id=g3448><g id=g3450><path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162"id=path3462 style=fill:url(#radialGradient3452);stroke:none /></g></g></g></g><g id=g3464><g id=g3466 clip-path=url(#clipPath3468)><g id=g3472 transform=translate(288,27.3594)><path d="M 0,0 C 146.729,0 265.68,60.281 265.68,134.641 265.68,209 146.729,269.282 0,269.282 -146.729,269.282 -265.68,209 -265.68,134.641 -265.68,60.281 -146.729,0 0,0"id=path3474 style=fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none /></g></g></g><g id=g3476><g id=g3478 clip-path=url(#clipPath3480)><g id=g3484 transform=translate(161.7344,145.3066)><path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.341 9.532,11.862 11.573,22.353 1.903,9.806 1.178,16.653 -2.154,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.063,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 L -37.679,81.573 C -37.405,82.982 -36.17,84 -34.734,84 L 26.32,84 C 45.508,84 59.79,78.79 68.767,68.513 77.792,58.182 80.579,43.741 77.05,25.592 75.614,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.722,0 -7.06,-36.322 c -0.274,-1.41 -1.508,-2.428 -2.944,-2.428 l -31.751,0 z"id=path3486 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3488 transform=translate(159.2236,197.3071)><path d="m 0,0 16.808,0 c 13.421,0 18.083,-2.945 19.667,-4.7 2.628,-2.914 3.124,-9.058 1.435,-17.767 C 36.012,-32.217 32.494,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.523,-49 0,0 Z m 28.831,35 -61.055,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.873,0 5.342,2.036 5.89,4.855 l 6.588,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.399,7.48 23.354,13.984 5.752,5.292 10.49,11.232 14.08,17.657 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.104 0.697,34.402 -8.969,45.466 C 63.965,29.444 48.923,35 28.831,35 m -45.633,-90 19.313,0 c 12.801,0 22.336,2.411 28.601,7.234 6.266,4.824 10.492,12.875 12.688,24.157 2.101,10.832 1.144,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.802,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.44,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.531,-38.75 -31.75,0 28.328,145.75 61.055,0"id=path3490 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3492 transform=translate(311.583,116.3066)><path d="m 0,0 c -0.896,0 -1.745,0.4 -2.314,1.092 -0.571,0.691 -0.802,1.6 -0.631,2.48 L 9.586,68.061 C 10.778,74.194 10.484,78.596 8.759,80.456 7.703,81.593 4.531,83.5 -4.848,83.5 L -27.55,83.5 -43.305,2.428 C -43.579,1.018 -44.814,0 -46.25,0 l -31.5,0 c -0.896,0 -1.745,0.4 -2.315,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 l 28.328,145.751 c 0.274,1.409 1.509,2.427 2.945,2.427 l 31.5,0 c 0.896,0 1.745,-0.4 2.315,-1.091 0.57,-0.692 0.801,-1.601 0.63,-2.481 L -21.813,113 2.609,113 c 18.605,0 31.221,-3.28 38.569,-10.028 7.49,-6.884 9.827,-17.891 6.947,-32.719 L 34.945,2.428 C 34.671,1.018 33.437,0 32,0 L 0,0 Z"id=path3494 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3496 transform=translate(293.6611,271.0571)><path d="m 0,0 -31.5,0 c -2.873,0 -5.342,-2.036 -5.89,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.5,0 c 2.872,0 5.342,2.036 5.89,4.855 l 15.283,78.645 20.229,0 c 9.363,0 11.328,-2 11.407,-2.086 0.568,-0.611 1.315,-3.441 0.082,-9.781 l -12.531,-64.489 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 32,0 c 2.872,0 5.342,2.036 5.89,4.855 l 13.179,67.825 c 3.093,15.921 0.447,27.864 -7.861,35.5 -7.928,7.281 -21.208,10.82 -40.599,10.82 l -20.784,0 6.143,31.605 C 6.231,-5.386 5.77,-3.566 4.63,-2.184 3.49,-0.801 1.792,0 0,0 m 0,-6 -7.531,-38.75 28.062,0 c 17.657,0 29.836,-3.082 36.539,-9.238 6.703,-6.16 8.711,-16.141 6.032,-29.938 l -13.18,-67.824 -32,0 12.531,64.488 c 1.426,7.336 0.902,12.34 -1.574,15.008 -2.477,2.668 -7.746,4.004 -15.805,4.004 l -25.176,0 -16.226,-83.5 -31.5,0 L -31.5,-6 0,-6"id=path3498 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3500 transform=translate(409.5498,145.3066)><path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.34 9.532,11.861 11.574,22.353 1.903,9.806 1.178,16.653 -2.155,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.062,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.802,1.601 -0.631,2.48 L -37.679,81.573 C -37.404,82.982 -36.17,84 -34.733,84 L 26.32,84 C 45.509,84 59.79,78.79 68.768,68.513 77.793,58.183 80.579,43.742 77.051,25.592 75.613,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.723,0 -7.057,-36.322 c -0.275,-1.41 -1.509,-2.428 -2.946,-2.428 l -31.75,0 z"id=path3502 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3504 transform=translate(407.0391,197.3071)><path d="M 0,0 16.808,0 C 30.229,0 34.891,-2.945 36.475,-4.7 39.104,-7.614 39.6,-13.758 37.91,-22.466 36.012,-32.217 32.493,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.522,-49 0,0 Z m 28.831,35 -61.054,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 L -66.44,-115.606 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.872,0 5.342,2.036 5.89,4.855 l 6.587,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.401,7.481 23.356,13.986 5.752,5.291 10.488,11.23 14.078,17.655 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.105 0.697,34.403 -8.969,45.467 C 63.965,29.444 48.924,35 28.831,35 m -45.632,-90 19.312,0 c 12.801,0 22.336,2.411 28.601,7.234 6.267,4.824 10.492,12.875 12.688,24.157 2.102,10.832 1.145,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.801,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.441,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.53,-38.75 -31.75,0 28.328,145.75 61.054,0"id=path3506 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g></g></g></g></svg>
                                 </div>
                                 <div class="flex-grow ">
-                                    <h2 class=" text-3xl title-font font-medium mb-3">Webdesign</h2>
+                                    <h2 class=" text-3xl title-font font-medium mb-3">PHP Native</i></h2>
                                     <p class="!hidden leading-relaxed text-xl text-justify">Donner du goût ? de la couleur aux
                                         applications, je le fais afin de rendre vos sites attrayants ?. Avant de devenir
                                         webdesigner, depuis tout petit j'étais déjà familier à la couleur et du dessin.
@@ -764,18 +764,31 @@
                         </div>
                     </div>
                     <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
-                        <div class="mx-6 pattern-dots-md gray-light">
+                        <div class="ml-3 mr-8 md:ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
+                            <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6  ">
+                                <div
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-red-100 text-white mb-5 flex-shrink-0 p-2">
+                                    <svg class="w-12 h-12" viewBox="0 0 50 52" xmlns="http://www.w3.org/2000/svg"><title>Logomark</title><path d="M49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1-.402.694l-9.209 5.302V39.25c0 .286-.152.55-.4.694L20.42 51.01c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1-.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054L.402 39.944A.801.801 0 0 1 0 39.25V6.334c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216l17.62-10.144zM1.602 7.719v31.068L19.22 48.93v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-.002-21.481L4.965 9.654 1.602 7.72zm8.81-5.994L2.405 6.334l8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764l4.645-2.674V7.719l-3.363 1.936-4.646 2.675v20.096l3.364-1.937zM39.243 7.164l-8.006 4.609 8.006 4.609 8.005-4.61-8.005-4.608zm-.801 10.605l-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937v-9.124zM20.02 38.33l11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833 7.993 4.524z" fill="#FF2D20" fill-rule="evenodd"/></svg>
+                                </div>
+                                <div class="flex-grow ">
+                                    <h2 class=" text-3xl title-font font-medium mb-3">Laravel</h2>
+                                    <p class="!hidden leading-relaxed text-xl text-justify">Donner du goût ? de la couleur aux
+                                        applications, je le fais afin de rendre vos sites attrayants ?. Avant de devenir
+                                        webdesigner, depuis tout petit j'étais déjà familier à la couleur et du dessin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
+                        <div class="ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
                             <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6 ">
                                 <div
-                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-100 text-blue-500 mb-5 flex-shrink-0">
-                                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-                                    </svg>
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mb-5 flex-shrink-0">
+                                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630"><rect width="630" height="630" fill="#f7df1e"/><path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/></svg>
                                 </div>
                                 <div class="flex-grow">
-                                    <h2 class=" text-3xl title-font font-medium mb-3">Intégration web</h2>
+                                    <h2 class=" text-3xl title-font font-medium mb-3">JavaScript</h2>
                                     <p class="!hidden leading-relaxed text-xl text-justify">
                                         Donner du goût ? de la couleur aux applications, je le fais afin de rendre vos
                                         sites attrayants ?. Avant de devenir webdesigner, depuis tout petit j'étais déjà
@@ -786,19 +799,50 @@
                         </div>
                     </div>
                     <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
-                        <div class="mx-6 pattern-dots-md gray-light">
+                        <div class="ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
                             <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6 ">
                                 <div
-                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-yellow-100 text-yellow-500 mb-5 flex-shrink-0">
-                                    <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
-                                        </path>
-                                    </svg>
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-50 text-blue-500 mb-5 flex-shrink-0">
+                                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="-11.5 -10.23174 23 20.46348"><title>React Logo</title><circle cx="0" cy="0" r="2.05" fill="#61dafb"/><g stroke="#61dafb" stroke-width="1" fill="none"><ellipse rx="11" ry="4.2"/><ellipse rx="11" ry="4.2" transform="rotate(60)"/><ellipse rx="11" ry="4.2" transform="rotate(120)"/></g></svg>
                                 </div>
                                 <div class="flex-grow">
-                                    <h2 class=" text-3xl title-font font-medium mb-3">Developpement Back-end</h2>
+                                    <h2 class=" text-3xl title-font font-medium mb-3">React JS</h2>
+                                    <p class="!hidden leading-relaxed text-xl text-justify">
+                                        Donner du goût ? de la couleur aux applications, je le fais afin de rendre vos
+                                        sites attrayants ?. Avant de devenir webdesigner, depuis tout petit j'étais déjà
+                                        familier à la couleur et du dessin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
+                        <div class="ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
+                            <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6 ">
+                                <div
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-blue-50 text-white mb-5 flex-shrink-0">
+                                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 54 33"><g clip-path="url(#prefix__clip0)"><path fill="#38bdf8" fill-rule="evenodd" d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z" clip-rule="evenodd"/></g><defs><clipPath id="prefix__clip0"><path fill="#fff" d="M0 0h54v32.4H0z"/></clipPath></defs></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class=" text-3xl title-font font-medium mb-3">Tailwind CSS</h2>
+                                    <p class="!hidden leading-relaxed text-xl text-justify">
+                                        Grâce à Php et ces frameworks (Larave, Symfoni, Slim), je peux vous réaliser un
+                                        site dynamique c'est-à-dire qui interagie avec votre base de données ?. Nous
+                                        pouvons essayer.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
+                        <div class="ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
+                            <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6 ">
+                                <div
+                                    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-violet-100 text-white mb-5 flex-shrink-0">
+                                    <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48.000000 48.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,48.000000) scale(0.100000,-0.100000)" fill="#6F00FF" stroke="none"><path d="M22 457 c-21 -22 -22 -32 -22 -218 0 -258 -20 -239 241 -239 258 0 239 -20 239 241 0 258 20 239 -241 239 -191 0 -196 0 -217 -23z m292 -88 c30 -24 35 -72 10 -100 -14 -15 -13 -19 10 -42 35 -35 33 -71 -4 -108 -28 -29 -32 -30 -112 -27 l-83 3 -3 148 -3 147 79 0 c65 0 84 -4 106 -21z"/><path d="M180 310 c0 -48 15 -57 69 -44 30 7 37 14 39 38 4 35 -10 46 -65 46 l-43 0 0 -40z"/><path d="M188 224 c-5 -4 -8 -27 -8 -51 l0 -43 49 0 c53 0 81 17 81 49 0 10 -7 24 -15 31 -18 15 -97 25 -107 14z"/></g></svg>
+                                </div>
+                                <div class="flex-grow">
+                                    <h2 class=" text-3xl title-font font-medium mb-3">Bootstrap</h2>
                                     <p class="!hidden leading-relaxed text-xl text-justify">
                                         Grâce à Php et ces frameworks (Larave, Symfoni, Slim), je peux vous réaliser un
                                         site dynamique c'est-à-dire qui interagie avec votre base de données ?. Nous
@@ -810,10 +854,42 @@
                     </div>
                 </div>
     </section>
+    
+    <section id="projects">
+        <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
+            <div class="row">
+                <div class="mx-8 col-12 text-center">
+                    <h2 class="section-title" data-aos="zoom-in">Featured Projects</h2>
+                    <p class="section-sub" data-aos="fade-up">We have three earning options for you to choose from:
+                        unlimited faucet, PTC advertisements, and smart investment!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flex flex-wrap">
+                    <div class="p-5 md:w-1/3 md:mb-0 mb-6 flex flex-col w-full" data-aos="fade-up">
+                        <div class="ml-3 mr-8 md:ml-3 mr-8 md:mx-6 pattern-dots-md gray-light">
+                            <div class="rounded-3xl bg-gray-800 p-8 transform translate-x-6 -translate-y-6  ">
+                                <div
+                                    class="w-full h-64 inline-flex items-center justify-center rounded-3xl bg-white text-white mb-5 flex-shrink-0 p-2">
+                                    <svg class="w-16 h-16" viewBox="0 0 711.20123 383.5975"width=711.20123 xml:space=preserve xmlns=http://www.w3.org/2000/svg xmlns:cc=http://creativecommons.org/ns# xmlns:dc=http://purl.org/dc/elements/1.1/ xmlns:rdf=http://www.w3.org/1999/02/22-rdf-syntax-ns# xmlns:svg=http://www.w3.org/2000/svg><title id=title3510>Official PHP Logo</title><metadata id=metadata3436><rdf:RDF><cc:Work rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type rdf:resource=http://purl.org/dc/dcmitype/StillImage /><dc:title>Official PHP Logo</dc:title><dc:creator><cc:Agent><dc:title>Colin Viebrock</dc:title></cc:Agent></dc:creator><dc:description/><dc:contributor><cc:Agent><dc:title/></cc:Agent></dc:contributor><cc:license rdf:resource=http://creativecommons.org/licenses/by-sa/3.0/ /><dc:rights><cc:Agent><dc:title>Copyright Colin Viebrock 1997 - All rights reserved.</dc:title></cc:Agent></dc:rights><dc:date>1997</dc:date></cc:Work><cc:License rdf:about=http://creativecommons.org/licenses/by-sa/3.0/ ><cc:permits rdf:resource=http://creativecommons.org/ns#Reproduction /><cc:permits rdf:resource=http://creativecommons.org/ns#Distribution /><cc:requires rdf:resource=http://creativecommons.org/ns#Notice /><cc:requires rdf:resource=http://creativecommons.org/ns#Attribution /><cc:permits rdf:resource=http://creativecommons.org/ns#DerivativeWorks /><cc:requires rdf:resource=http://creativecommons.org/ns#ShareAlike /></cc:License></rdf:RDF></metadata><defs id=defs3434><clipPath clipPathUnits=userSpaceOnUse id=clipPath3444><path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162"id=path3446 /></clipPath><radialGradient cx=0 cy=0 fx=0 fy=0 gradientTransform=matrix(363.05789,0,0,-363.05789,177.52002,256.30713) gradientUnits=userSpaceOnUse id=radialGradient3452 r=1 spreadMethod=pad><stop id=stop3454 offset=0 style=stop-opacity:1;stop-color:#aeb2d5 /><stop id=stop3456 offset=0.3 style=stop-opacity:1;stop-color:#aeb2d5 /><stop id=stop3458 offset=0.75 style=stop-opacity:1;stop-color:#484c89 /><stop id=stop3460 offset=1 style=stop-opacity:1;stop-color:#484c89 /></radialGradient><clipPath clipPathUnits=userSpaceOnUse id=clipPath3468><path d="M 0,324 576,324 576,0 0,0 0,324 Z"id=path3470 /></clipPath><clipPath clipPathUnits=userSpaceOnUse id=clipPath3480><path d="M 0,324 576,324 576,0 0,0 0,324 Z"id=path3482 /></clipPath></defs><g id=g3438 transform=matrix(1.25,0,0,-1.25,-4.4,394.29875)><g id=g3440><g id=g3442 clip-path=url(#clipPath3444)><g id=g3448><g id=g3450><path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162"id=path3462 style=fill:url(#radialGradient3452);stroke:none /></g></g></g></g><g id=g3464><g id=g3466 clip-path=url(#clipPath3468)><g id=g3472 transform=translate(288,27.3594)><path d="M 0,0 C 146.729,0 265.68,60.281 265.68,134.641 265.68,209 146.729,269.282 0,269.282 -146.729,269.282 -265.68,209 -265.68,134.641 -265.68,60.281 -146.729,0 0,0"id=path3474 style=fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none /></g></g></g><g id=g3476><g id=g3478 clip-path=url(#clipPath3480)><g id=g3484 transform=translate(161.7344,145.3066)><path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.341 9.532,11.862 11.573,22.353 1.903,9.806 1.178,16.653 -2.154,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.063,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 L -37.679,81.573 C -37.405,82.982 -36.17,84 -34.734,84 L 26.32,84 C 45.508,84 59.79,78.79 68.767,68.513 77.792,58.182 80.579,43.741 77.05,25.592 75.614,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.722,0 -7.06,-36.322 c -0.274,-1.41 -1.508,-2.428 -2.944,-2.428 l -31.751,0 z"id=path3486 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3488 transform=translate(159.2236,197.3071)><path d="m 0,0 16.808,0 c 13.421,0 18.083,-2.945 19.667,-4.7 2.628,-2.914 3.124,-9.058 1.435,-17.767 C 36.012,-32.217 32.494,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.523,-49 0,0 Z m 28.831,35 -61.055,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.873,0 5.342,2.036 5.89,4.855 l 6.588,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.399,7.48 23.354,13.984 5.752,5.292 10.49,11.232 14.08,17.657 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.104 0.697,34.402 -8.969,45.466 C 63.965,29.444 48.923,35 28.831,35 m -45.633,-90 19.313,0 c 12.801,0 22.336,2.411 28.601,7.234 6.266,4.824 10.492,12.875 12.688,24.157 2.101,10.832 1.144,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.802,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.44,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.531,-38.75 -31.75,0 28.328,145.75 61.055,0"id=path3490 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3492 transform=translate(311.583,116.3066)><path d="m 0,0 c -0.896,0 -1.745,0.4 -2.314,1.092 -0.571,0.691 -0.802,1.6 -0.631,2.48 L 9.586,68.061 C 10.778,74.194 10.484,78.596 8.759,80.456 7.703,81.593 4.531,83.5 -4.848,83.5 L -27.55,83.5 -43.305,2.428 C -43.579,1.018 -44.814,0 -46.25,0 l -31.5,0 c -0.896,0 -1.745,0.4 -2.315,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 l 28.328,145.751 c 0.274,1.409 1.509,2.427 2.945,2.427 l 31.5,0 c 0.896,0 1.745,-0.4 2.315,-1.091 0.57,-0.692 0.801,-1.601 0.63,-2.481 L -21.813,113 2.609,113 c 18.605,0 31.221,-3.28 38.569,-10.028 7.49,-6.884 9.827,-17.891 6.947,-32.719 L 34.945,2.428 C 34.671,1.018 33.437,0 32,0 L 0,0 Z"id=path3494 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3496 transform=translate(293.6611,271.0571)><path d="m 0,0 -31.5,0 c -2.873,0 -5.342,-2.036 -5.89,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.5,0 c 2.872,0 5.342,2.036 5.89,4.855 l 15.283,78.645 20.229,0 c 9.363,0 11.328,-2 11.407,-2.086 0.568,-0.611 1.315,-3.441 0.082,-9.781 l -12.531,-64.489 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 32,0 c 2.872,0 5.342,2.036 5.89,4.855 l 13.179,67.825 c 3.093,15.921 0.447,27.864 -7.861,35.5 -7.928,7.281 -21.208,10.82 -40.599,10.82 l -20.784,0 6.143,31.605 C 6.231,-5.386 5.77,-3.566 4.63,-2.184 3.49,-0.801 1.792,0 0,0 m 0,-6 -7.531,-38.75 28.062,0 c 17.657,0 29.836,-3.082 36.539,-9.238 6.703,-6.16 8.711,-16.141 6.032,-29.938 l -13.18,-67.824 -32,0 12.531,64.488 c 1.426,7.336 0.902,12.34 -1.574,15.008 -2.477,2.668 -7.746,4.004 -15.805,4.004 l -25.176,0 -16.226,-83.5 -31.5,0 L -31.5,-6 0,-6"id=path3498 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3500 transform=translate(409.5498,145.3066)><path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.34 9.532,11.861 11.574,22.353 1.903,9.806 1.178,16.653 -2.155,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.062,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.802,1.601 -0.631,2.48 L -37.679,81.573 C -37.404,82.982 -36.17,84 -34.733,84 L 26.32,84 C 45.509,84 59.79,78.79 68.768,68.513 77.793,58.183 80.579,43.742 77.051,25.592 75.613,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.723,0 -7.057,-36.322 c -0.275,-1.41 -1.509,-2.428 -2.946,-2.428 l -31.75,0 z"id=path3502 style=fill:#000;fill-opacity:1;fill-rule:nonzero;stroke:none /></g><g id=g3504 transform=translate(407.0391,197.3071)><path d="M 0,0 16.808,0 C 30.229,0 34.891,-2.945 36.475,-4.7 39.104,-7.614 39.6,-13.758 37.91,-22.466 36.012,-32.217 32.493,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.522,-49 0,0 Z m 28.831,35 -61.054,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 L -66.44,-115.606 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.872,0 5.342,2.036 5.89,4.855 l 6.587,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.401,7.481 23.356,13.986 5.752,5.291 10.488,11.23 14.078,17.655 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.105 0.697,34.403 -8.969,45.467 C 63.965,29.444 48.924,35 28.831,35 m -45.632,-90 19.312,0 c 12.801,0 22.336,2.411 28.601,7.234 6.267,4.824 10.492,12.875 12.688,24.157 2.102,10.832 1.145,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.801,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.441,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.53,-38.75 -31.75,0 28.328,145.75 61.054,0"id=path3506 style=fill:#fff;fill-opacity:1;fill-rule:nonzero;stroke:none /></g></g></g></g></svg>
+                                </div>
+                                <div class="flex-grow ">
+                                    <h2 class=" text-3xl title-font font-medium mb-3">Presensi Guru dengan Deteksi Lokasi dan Selfie Absensi</i></h2>
+                                    <p class="leading-relaxed text-xl text-justify">Donner du goût ? de la couleur aux
+                                        applications, je le fais afin de rendre vos sites attrayants ?. Avant de devenir
+                                        webdesigner, depuis tout petit j'étais déjà familier à la couleur et du dessin.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    
     <section id="earn">
         <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="mx-8 col-12 text-center">
                     <h2 class="section-title" data-aos="zoom-in">How To Earn?</h2>
                     <p class="section-sub" data-aos="fade-up">We have three earning options for you to choose from:
                         unlimited faucet, PTC advertisements, and smart investment!</p>
@@ -864,7 +940,7 @@
     <section style="display: none;" translate="no" id="earn">
         <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="mx-8 col-12 text-center">
                     <h2 class="section-title" data-aos="zoom-in">3 Steps To Start!</h2>
                     <p class="section-sub">You need to just sign up, login and start earning!</p>
                 </div>
@@ -901,7 +977,7 @@
     <section id="feature">
         <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="mx-8 col-12 text-center">
                     <h2 class="section-title" data-aos="zoom-in">Unique Features</h2>
                     <p class="section-sub" data-aos="fade-up">FaucetEarner is not just an ordinary earning website. We
                         give the best piority to our users!</p>
@@ -941,7 +1017,7 @@
         <div class="bg">
             <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
                 <div class="row">
-                    <div class="col-12 text-center">
+                    <div class="mx-8 col-12 text-center">
                         <h2 class="section-title text-white" data-aos="zoom-in">Our Amazing Community</h2>
                     </div>
 
@@ -1148,7 +1224,7 @@
         <div class="overlay">
             <div class="mx-auto w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px]">
                 <div class="row">
-                    <div class="col-12 text-center" data-aos="fade-up">
+                    <div class="mx-8 col-12 text-center" data-aos="fade-up">
                         <h2 class="section-title">Contact us</h2>
                         <p class="section-sub mb-3">Want to get in touch? drop us an e-mail. We'd love to hear from you.
                         </p>
@@ -1319,4 +1395,4 @@
             slideShadows: true
         }
     });
-</script>
+            </script>
