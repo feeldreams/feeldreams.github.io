@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Pemilihan Cerdas: Aplikasi Rekomendasi Pemilih Capres - Cawapres 2024</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Itim&display=swap');
+body{font-family: "Poppins", sans-serif;}
+</style>
+<body class="bg-gray-100 p-3">
+
+    <div class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md" id="quiz-container">
+        
+        <div id="blockQuestion">
+        	
+        <h1 class="text-xl font-bold mb-4">Panduan Pemilihan Cerdas: Aplikasi Rekomendasi Pemilih Capres - Cawapres 2024</h1>
+        <p class="text-md font-base mb-4">Tujuan dari kuis ini adalah memberikan rekomendasi berdasarkan kesesuaianmu dengan isu-isu yang diusung oleh kandidat calon presiden dan wakil presiden 2024. Pilih opsi sesuai hati nurani kamu ya!</p>
+        <div class="mb-5 grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"></div>
+        
+        <!-- 1 -->
+        <div class="mb-6 question" data-question="1">
+            <p class="text-md font-bold mb-2">Untuk mengatasi atau mengurangi tingkat kemiskinan sebesar 25,9 juta jiwa, data BPS tahun 2023, menurut saya, pemerintah sebaiknya...</p>
+            <div class="flex flex-col space-y-2">
+            	<div class="flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700">
+                    <label class="flex items-center w-full py-4 ms-2 text-sm font-medium text-gray-900"><input type="radio" name="q1" value="A" class="mx-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">Memperbaiki Program Keluarga Harapan (PKH) atau bantuan sosial keluarga miskin supaya tepat sasaran.</label>
+                </div>
+                <div class="flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700">
+                    <label class="flex items-center w-full py-4 ms-2 text-sm font-medium text-gray-900"><input type="radio" name="q1" value="A" class="mx-3 w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500">Memperbaiki Program Keluarga Harapan (PKH) atau bantuan sosial keluarga miskin supaya tepat sasaran.</label>
+                </div>
+                <label><input type="radio" name="q1" value="A" class="text-md mr-2"> Memperbaiki Program Keluarga Harapan (PKH) atau bantuan sosial keluarga miskin supaya tepat sasaran.</label>
+                <label><input type="radio" name="q1" value="B" class="text-md mr-2"> Melanjutkan program PKH yang sudah ada (10 juta penerima).</label>
+                <label><input type="radio" name="q1" value="C" class="text-md mr-2"> Menambah jumlah penerima PKH atau bantuan sosial keluarga miskin dari 10 juta menjadi 15 juta penerima.</label>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="mb-6 question" data-question="2">
+            <p class="text-md font-bold mb-2">Untuk mendorong pertumbuhan ekonomi di Indonesia, menurut pandangan saya, pemerintah seharusnya...</p>
+            <div class="flex flex-col space-y-2">
+                <label><input type="radio" name="q2" value="A" class="text-md mr-2"> Melakukan pemerataan ekonomi dan mengurangi tingkat kemiskinan dengan memperluas peluang berusaha dan menciptakan lapangan kerja untuk mengurangi angka pengangguran yang saat ini mencapai 8 juta jiwa</label>
+                <label><input type="radio" name="q2" value="B" class="text-md mr-2"> Memperluas cakupan program hilirisasi pemerintah, tak hanya di sektor pertambangan, tapi juga pertanian, maritim, dan digital.</label>
+                <label><input type="radio" name="q2" value="C" class="text-md mr-2"> Mempercepat pembangunan ekonomi mandiri berbasis pengetahuan dan nilai tambah guna meningkatkan pertumbuhan ekonomi hingga mencapai 7%.</label>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="mb-6 question" data-question="3">
+            <p class="text-md font-bold mb-2">Menurut pandangan saya, tenaga kesehatan sebaiknya mendapatkan dukungan dari pemerintah seperti...</p>
+            <div class="flex flex-col space-y-2">
+                <label><input type="radio" name="q3" value="A" class="text-md mr-2"> Fokus pada pendidikan tenaga kesehatan dengan cara memperbanyak pendidikan vokasi atau politeknik kesehatan</label>
+                <label><input type="radio" name="q3" value="B" class="text-md mr-2"> Fokus meningkatkan gaji ASN tenaga kesehatan.</label>
+                <label><input type="radio" name="q3" value="C" class="text-md mr-2"> Fokus memberikan beasiswa bagi tenaga kesehatan dari daerah yang membutuhkan perhatian dan memberikan hak tenaga kesehatan saat masa pelatihan</label>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="mb-6 question" data-question="4">
+            <p class="text-md font-bold mb-2">Berdasarkan data Survei Status Gizi Nasional (SSGI) tahun 2022, angka stunting (anak kurang gizi) di Indonesia masih mencapai tingkat yang tinggi, yakni sebesar 21,6%. Menurut pandangan saya, pemerintah seharusnya memberikan...</p>
+            <div class="flex flex-col space-y-2">
+                <label><input type="radio" name="q4" value="A" class="text-md mr-2"> Dukungan gizi bagi ibu hamil dan anak hingga 3 tahun melalui dukungan kader desa untuk memberikan pangan seimbang.</label>
+                <label><input type="radio" name="q4" value="B" class="text-md mr-2"> Makanan dan susu gratis serta akses layanan kesehatan untuk anak.</label>
+                <label><input type="radio" name="q4" value="C" class="text-md mr-2"> Bantuan gizi ibu hamil selama 1.000 hari pertama hingga anak memasuki umur 5 tahun.</label>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="mb-6 question" data-question="5">
+            <p class="text-md font-bold mb-2">Angka pengangguran di Indonesia masih tinggi, mencapai 7,86 juta orang menurut BPS Agustus 2023. Menurut pandangan saya, pemerintah perlu...</p>
+            <div class="flex flex-col space-y-2">
+                <label><input type="radio" name="q5" value="A" class="text-md mr-2"> Menciptakan 15 juta lapangan pekerjaan baru termasuk pekerjaan yang mendukung pelestarian lingkungan.</label>
+                <label><input type="radio" name="q5" value="B" class="text-md mr-2"> Mendorong perusahaan untuk menempatkan angkatan kerja berusia 18-24 tahun sebagai karyawan tetap dan membangun sekolah unggul terintegrasi dengan dunia usaha dan industri.</label>
+                <label><input type="radio" name="q5" value="C" class="text-md mr-2"> Menciptakan 17 juta lapangan pekerjaan baru melalui percepatan dan perluasan pengembangan industri padat karya.</label>
+            </div>
+        </div>
+
+        <button id="nextBtn" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Selanjutnya</button>
+        
+        </div>
+        
+        <!-- Chart -->
+        <div id="blockChart" class="hidden">
+            <h1 class="text-2xl font-bold mb-4">Rekomendasi Capres - Cawapres 2024 untuk Anda</h1>
+            <div class="mt-5 grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"></div>
+            <div class="py-6" id="pie-chart"></div>
+            <div class="mt-5 grid grid-cols-1 items-center border-gray-200 border-t dark:border-gray-700 justify-between"></div>
+            <p class="text-md font-base mt-4"><b>Disclaimer:</b>&nbsp;Aplikasi ini sama sekali tidak memaksa Anda untuk memilih pasangan calon tertentu. Keputusan akhir tetap sepenuhnya ada di tanganmu, dan aplikasi ini hanya dirancang untuk membantu pemilih dalam memahami posisi politik dan pandangan kandidat paslon dalam suatu pemilihan umum semata.</p>
+        </div>
+        
+        <!-- Score Container -->
+        <div id="score-container" class="mt-6 hidden">
+            <h2 class="text-lg font-semibold mb-2">Skor Kamu:</h2>
+            <p id="score" class="text-xl font-bold"></p>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('.question');
+            const nextBtn = document.getElementById('nextBtn');
+            const scoreContainer = document.getElementById('score-container');
+            const scoreElement = document.getElementById('score');
+            const chartCanvas = document.getElementById('chart');
+            let currentQuestion = 0;
+            let score = 0;
+            let opsiA = 0;
+            let opsiB = 0;
+            let opsiC = 0;
+            const answerCounts = { A: 0, B: 0, C: 0 };
+
+            function showQuestion(index) {
+                questions.forEach(question => {
+                    question.style.display = 'none';
+                });
+
+                questions[index].style.display = 'block';
+            }
+
+            function nextQuestion() {
+                const selectedOption = document.querySelector(`input[name="q${currentQuestion + 1}"]:checked`);
+
+                if (selectedOption) {
+                    answerCounts[selectedOption.value]++;
+                    
+                    if (selectedOption.value === getCorrectAnswer(currentQuestion + 1)) {
+                        score++;
+                    }
+                    
+                    if (selectedOption.value === "A") {
+                    	opsiA++;
+                    } else if (selectedOption.value === "B") {
+                    	opsiB++;
+                    } else if (selectedOption.value === "C") {
+                    	opsiC++;
+                    }
+                    
+                    currentQuestion++;
+
+                    if (currentQuestion < questions.length) {
+                        showQuestion(currentQuestion);
+                    } else {
+                        scoreElement.textContent = `${score} out of ${questions.length}`;
+                        //scoreContainer.style.display = 'block';
+                        blockQuestion.style.display = 'none';
+
+                        blockChart.style.display = 'block';
+                        const getChartOptions = () => {
+        return {
+          series: [opsiA, opsiB, opsiC],
+          colors: ["#00A505", "#00DBFF", "#FF000F"],
+          chart: {
+            height: 420,
+            width: "100%",
+            type: "pie",
+          },
+          stroke: {
+            colors: ["white"],
+            lineCap: "",
+          },
+          plotOptions: {
+            pie: {
+              labels: {
+                show: true,
+              },
+              size: "100%",
+              dataLabels: {
+                offset: -25
+              }
+            },
+          },
+          labels: ["Anies - Muhaimin", "Prabowo - Gibran", "Ganjar - Mahfud"],
+          dataLabels: {
+            enabled: true,
+            style: {
+              fontFamily: "Inter, sans-serif",
+            },
+          },
+          legend: {
+            position: "bottom",
+            fontFamily: "Inter, sans-serif",
+          },
+          yaxis: {
+            labels: {
+              formatter: function (value) {
+                return value + "%"
+              },
+            },
+          },
+          xaxis: {
+            labels: {
+              formatter: function (value) {
+                return value  + "%"
+              },
+            },
+            axisTicks: {
+              show: false,
+            },
+            axisBorder: {
+              show: false,
+            },
+          },
+        }
+      }
+                        if (document.getElementById("pie-chart") && typeof ApexCharts !== 'undefined') {
+        const chart = new ApexCharts(document.getElementById("pie-chart"), getChartOptions());
+        chart.render();
+      }
+                    }
+                } else {
+                    alert('Tolong pilih salah satu opsi sebelum melanjutkan.');
+                }
+            }
+
+            function getCorrectAnswer(questionNumber) {
+                const correctAnswers = {
+                    1: 'D',
+                    2: 'D',
+                    3: 'D',
+                    4: 'D',
+                    5: 'D',
+                };
+
+                return correctAnswers[questionNumber];
+            }
+
+            showQuestion(currentQuestion);
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+    questions.forEach((question) => {
+        const optionsContainer = question.querySelector(".flex");
+
+        if (optionsContainer) {
+            const options = Array.from(optionsContainer.children);
+            shuffleArray(options);
+
+            options.forEach((option) => {
+                optionsContainer.appendChild(option);
+            });
+        }
+    });
+
+            nextBtn.addEventListener('click', nextQuestion);
+
+        });
+    </script>
+
+</body>
+  </html>
