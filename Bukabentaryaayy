@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+
+  <link rel="icon" type="image/svg+xml" href="https://feeldreams.github.io/main-icon.png"> 
+  <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link rel="stylesheet" href="https://htmlku.com/bukabentarya/style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Pesan HTML buat Kamu Nih! <3</title>
+  <meta name="description" content="Buka bentar yaa.. HTML feeldream.id">
+  <meta name="keywords" content="HTML, Bucin, Feeldream">
+  <meta name="author" content="Feeldream">
+  <!-- 
+  Made with love by Ryannn
+     
+  Thanks to all <3
+  -->
+</head>
+<body>
+	
+   <div class="overlay">
+     <div class="loading-message">Hai ayangg<br>Tunggu dulu ya..</div>
+   </div>
+
+   <audio src="https://feeldreams.github.io/audio/melody.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <section class="first">
+       <div class="wp"><img src="https://feeldreams.github.io/maukahkamu/prem.jpg"/></div>
+       <img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       <h1 class="title">Hay Nissa!</h1>
+       <p class="flip">Aku ada sesuatu nih ðŸ¤­</p>
+       <p class="slide-up"><i>Scroll ke bawah ya :)</i></p>
+  </section>
+  
+  <section>
+      <div class="wp"><img src="https://feeldreams.github.io/maukahkamu/wptujuh.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      <h3 class="title">Kamu Sayang Ga<br>Sama Aku? ðŸ¤­â¤ï¸</h3>
+      <div id="Tombol">
+       <a id="By" onClick="fungsimau()">Sayang</a>
+       <a id="Bn" onClick="fungsigamau()">Engga</a>
+     </div>
+     <!-- Pesan Ditolak -->
+     <div class="sembunyi">
+       <img id="stikerditolak" src="https://feeldreams.github.io/ywdh.gif"/>
+       <p id="kataditolak">Yaahh:( yaudah dehðŸ™</p>
+     </div>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="https://feeldreams.github.io/maukahkamu/wptiga.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/cilukba.gif"/>
+      <h3 id="textsec3" class="anm title">Yeayy! Aku juga sayang<br>banget sama kamu ðŸ˜†â¤ï¸</h3>
+      <h3 id="textsec3b" class="anm">Seberapa Sayang Nih? ðŸ˜„â¤ï¸</h3>
+      <div class="kolomrange">
+       	<div class="inirange">
+           <input type="range" min="1" max="100" value="25"/>
+           </div>
+           <div class="inivalue"></div>
+       </div>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="https://feeldreams.github.io/maukahkamu/wpempat.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/bwa2.gif"/>
+      <h2 class="title"><i>Yeayy!</i> âœ¨</h2>
+      <p id="teksnimasi">Makasii udah sayang<br>sama aku </p>
+  </section>
+  
+  <section>
+      <div class="wp"><img src="https://feeldreams.github.io/maukahkamu/wplapan.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/smprt.gif"/>
+      <h3 class="title">Sekarang kamu kangen<br>engga sama aku? ðŸ¥ºâ¤ï¸</h3>
+      <div id="Tombol2">
+       <a id="By2" onClick="fungsimau2()">Kangen</a>
+       <a id="Bn2" onClick="fungsigamau2()">Engga</a>
+      </div>
+      <!-- Pesan Ditolak -->
+      <div class="sembunyi">
+        <img id="stikerditolak2" src="https://feeldreams.github.io/ywdh.gif"/>
+        <p id="kataditolak2">Yaahh ko engga sih ðŸ¥º</p>
+      </div>
+  </section>
+  
+  <section id="iniakhir">
+  	<div class="wp"><img src="https://feeldreams.github.io/maukahkamu/wplima.jpg"/></div>
+      <img id="stikerakhir" class="stiker stakhir fade-in" src="https://feeldreams.github.io/g5.gif"/>
+      <img id="stikerakhir2" class="stakhir" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+      <h1 id="judulakhir">Hm.. Aku juga kangen<br>banget sama kamu :(</h1>
+      <p id="kalimatakhir">Terakhir deh ðŸ¤­â¤ï¸<br><br>`Mencintaimu serupa air laut,<br>pasang surut akan selalu ada,<br>namun air laut, tidak pernah<br>berubah rasa <3`</p>
+      <p id="palingakhir">Jangan lupa balas pesan<br>ke WhatsApp aku ya! ðŸ˜†â¤ï¸</p>
+      <div id="TombolWA">
+       <a onClick="menuju()">Balas ðŸ’Œ</a>
+     </div>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+teksjudulakhir2 = "I Love You ¨";
+pesanWA = "Iya aku sayang kamu "; // Misal 100%!
+
+////////
+  
+const body = document.querySelector("body"); const swalst = Swal.mixin({timer: 2777, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageHeight: 90,}); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="https://htmlku.com/bukabentarya/script.js"></script>
+</body>
+</html>
