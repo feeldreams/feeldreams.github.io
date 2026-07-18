@@ -1,1 +1,3 @@
-Script HTML Bucin
+aku sayang kamu 
+
+pacar ku yang ganteng 
