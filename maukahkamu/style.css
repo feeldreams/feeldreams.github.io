@@ -4,7 +4,7 @@
 --gaya-font3: 'Caveat', cursive;
 }
 body {overflow:hidden;background:#000;font-family:var(--gaya-font); margin: 0;}
-body::before{content:"\00A9  Rayys | feelthisray";color:white;opacity:.5;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
+body::before{content:"\00A9  Jooan | feelthisray";color:white;opacity:.5;font-size:10px;position:fixed;bottom:25px;right:25px;z-index:150}
 @keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1);}}
 @keyframes rto{from {transform:scale(1);} to {transform:scale(1.1);}}
 #counter{position:fixed;color:white;font-size:11px;top:20px;left:20px;z-index:999}
